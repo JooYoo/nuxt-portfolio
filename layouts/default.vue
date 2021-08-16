@@ -1,36 +1,40 @@
 <template>
   <v-app dark>
-    <v-app-bar fixed app>
-      <v-toolbar-title v-text="title" />
+    <v-app-bar fixed elevate-on-scroll app class="px-5">
+      <v-toolbar-title class="6rem" v-text="title" />
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>mdi-flask-empty-outline</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-lightning-bolt</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-music-circle-outline</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer app height="80px">
-      <v-row>
-        <v-col class="text-left pl-10">
-          © {{ new Date().getFullYear() }}
+    <v-footer app height="80px" class="px-6">
+      <v-row align="center">
+        <v-col class="text-left">
+          © {{ new Date().getFullYear() }} -
           <strong>ZhuYu</strong>
         </v-col>
-        <v-col class="text-right pr-10">
-          <v-btn
-            v-for="contact in contacts"
-            :key="contact.id"
-            class="mx-4"
-            dark
+
+        <v-btn v-for="contact in contacts" :key="contact.id">
+          <a
+            :href="contact.link"
+            :target="contact.target"
+            class="footer__link-icon"
             icon
           >
-            <a
-              :href="contact.link"
-              :target="contact.target"
-              class="footer__link-icon"
-            >
-              <v-icon size="24px">{{ contact.icon }}</v-icon>
-            </a>
-          </v-btn>
-        </v-col>
+            <v-icon size="24px">{{ contact.icon }}</v-icon>
+          </a>
+        </v-btn>
       </v-row>
     </v-footer>
   </v-app>
@@ -43,7 +47,7 @@ export default {
   data() {
     return {
       contacts: JsonContacts,
-      title: 'Zhu Yu'
+      title: 'ZhuYu'
     }
   }
 }
