@@ -1,8 +1,9 @@
 <template>
   <v-app dark>
     <v-app-bar fixed elevate-on-scroll app class="px-5">
-      <v-toolbar-title class="6rem" v-text="title" />
+      <v-btn text class="text-h4" v-text="title" />
       <v-spacer></v-spacer>
+      <!-- TODO: iteration nav-btns -->
       <v-btn icon>
         <v-icon>mdi-flask-empty-outline</v-icon>
       </v-btn>
@@ -14,9 +15,7 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+      <Nuxt />
     </v-main>
     <v-footer app height="80px" class="px-6">
       <v-row align="center">
@@ -25,14 +24,13 @@
           <strong>ZhuYu</strong>
         </v-col>
 
-        <v-btn v-for="contact in contacts" :key="contact.id">
+        <v-btn v-for="contact in contacts" :key="contact.id" icon class="mx-4">
           <a
             :href="contact.link"
             :target="contact.target"
             class="footer__link-icon"
-            icon
           >
-            <v-icon size="24px">{{ contact.icon }}</v-icon>
+            <v-icon>{{ contact.icon }}</v-icon>
           </a>
         </v-btn>
       </v-row>
@@ -47,7 +45,7 @@ export default {
   data() {
     return {
       contacts: JsonContacts,
-      title: 'ZhuYu'
+      title: '👨🏻‍💻'
     }
   }
 }
