@@ -1,6 +1,13 @@
 <template>
   <div>
     <YuHero />
-    <v-container>content go here</v-container>
+
+    <YuAbout />
   </div>
 </template>
+
+<style lang="scss">
+.about__wrapper {
+  // background: whitesmoke;
+}
+</style>
