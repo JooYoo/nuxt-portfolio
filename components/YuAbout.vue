@@ -1,8 +1,8 @@
 <template>
-  <div class="about__bg">
+  <div class="about-bg">
     <v-container>
-      <div class="about__title">About</div>
-      <p v-for="(about, index) in abouts" :key="index" class="about__content">
+      <h3 class="text-h3 font-weight-thin mt-10">About</h3>
+      <p v-for="(about, index) in abouts" :key="index" class="my-9 text-body-1">
         {{ about }}
       </p>
     </v-container>
@@ -22,18 +22,7 @@ export default {
 </script>
 
 <style>
-.about__bg {
+.about-bg {
   background-color: rgba(255, 255, 255, 0.1);
-}
-.about__title {
-  margin-top: 40px;
-  font-size: 45px;
-  font-weight: lighter;
-  letter-spacing: 2px;
-}
-
-.about__content {
-  margin: 40px 0;
-  font-size: 14px;
 }
 </style>

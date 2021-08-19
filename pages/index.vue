@@ -1,13 +1,7 @@
 <template>
   <div>
     <YuHero />
-
     <YuAbout />
+    <YuProject />
   </div>
 </template>
-
-<style lang="scss">
-.about__wrapper {
-  // background: whitesmoke;
-}
-</style>
