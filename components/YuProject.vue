@@ -22,6 +22,13 @@
         </v-card>
       </v-col>
     </v-row>
+
+    <v-row justify="center" class="mt-10">
+      <v-btn x-large elevation="7">
+        <v-icon left>mdi-flask-empty-outline</v-icon>
+        more
+      </v-btn>
+    </v-row>
   </v-container>
 </template>
 
