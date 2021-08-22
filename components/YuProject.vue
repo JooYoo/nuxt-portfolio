@@ -4,7 +4,7 @@
 
     <v-row>
       <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-        <v-card elevation="8" outlined hover>
+        <v-card elevation="8" outlined hover class="rounded-lg">
           <v-img
             :src="card.src"
             class="white--text"
@@ -24,7 +24,7 @@
     </v-row>
 
     <v-row justify="center" class="mt-10">
-      <v-btn x-large elevation="7">
+      <v-btn rounded x-large elevation="7">
         <v-icon left>mdi-flask-empty-outline</v-icon>
         more
       </v-btn>
