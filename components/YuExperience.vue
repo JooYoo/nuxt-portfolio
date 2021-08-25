@@ -23,7 +23,7 @@
             :class="`subheading font-weight-light mb-1 ${year.color}--text `"
             v-text="year.where"
           ></div>
-          <div>{{ year.content.join(' ') }}</div>
+          <div v-for="point of year.content" :key="point" v-text="point"></div>
         </div>
       </v-timeline-item>
     </v-timeline>
