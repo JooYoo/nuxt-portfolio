@@ -1,12 +1,10 @@
 <template>
-  <div class="about-bg">
-    <v-container>
-      <h3 class="text-h3 font-weight-thin mt-10">About</h3>
-      <p v-for="(about, index) in abouts" :key="index" class="my-9 text-body-1">
-        {{ about }}
-      </p>
-    </v-container>
-  </div>
+  <v-container class="mt-10">
+    <h3 class="text-h3 font-weight-thin">About</h3>
+    <p v-for="(about, index) in abouts" :key="index" class="my-9 text-body-1">
+      {{ about }}
+    </p>
+  </v-container>
 </template>
 
 <script>
@@ -20,9 +18,3 @@ export default {
   })
 }
 </script>
-
-<style>
-.about-bg {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-</style>

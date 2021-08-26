@@ -5,5 +5,6 @@
     <YuProject />
     <YuSkill />
     <YuExperience />
+    <YuEducation />
   </div>
 </template>
