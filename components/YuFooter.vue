@@ -1,0 +1,39 @@
+<template>
+  <v-footer app height="80px" class="px-6">
+    <v-row align="center">
+      <v-col class="text-left">
+        © {{ new Date().getFullYear() }} -
+        <strong>ZhuYu</strong>
+      </v-col>
+
+      <v-btn v-for="contact in contacts" :key="contact.id" icon class="mx-4">
+        <a
+          :href="contact.link"
+          :target="contact.target"
+          class="footer__link-icon"
+        >
+          <v-icon>{{ contact.icon }}</v-icon>
+        </a>
+      </v-btn>
+    </v-row>
+  </v-footer>
+</template>
+
+<script>
+import JsonContacts from '~/static/contacts.json'
+
+export default {
+  data() {
+    return {
+      contacts: JsonContacts
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.footer__link-icon {
+  text-decoration: none;
+  color: #fff;
+}
+</style>

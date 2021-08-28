@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <v-main>
     <YuHero />
     <YuAbout />
     <YuProject />
     <YuSkill />
     <YuExperience />
     <YuEducation />
-  </div>
+  </v-main>
 </template>
