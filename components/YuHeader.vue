@@ -1,10 +1,14 @@
 <template>
   <v-app-bar fixed elevate-on-scroll app class="px-5">
-    <v-btn text class="text-h4" v-text="'👨🏻‍💻'" />
+    <NuxtLink class="no-deco" to="/">
+      <v-btn text class="text-h4" v-text="'👨🏻‍💻'" />
+    </NuxtLink>
     <v-spacer></v-spacer>
     <!-- TODO: iteration nav-btns -->
     <v-btn icon>
-      <v-icon>mdi-flask-empty-outline</v-icon>
+      <NuxtLink class="no-deco" to="/project">
+        <v-icon>mdi-flask-empty-outline</v-icon>
+      </NuxtLink>
     </v-btn>
     <v-btn icon>
       <v-icon>mdi-lightning-bolt</v-icon>
