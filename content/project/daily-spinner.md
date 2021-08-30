@@ -1,0 +1,68 @@
+---
+title: Daily Spinner
+description: Welcome to my first blog post using the content module.
+overviewImg: https://images.unsplash.com/photo-1509515837298-2c67a3933321?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80
+languages:
+  - name: JavaScript
+    percent: 66
+  - name: Sass
+    percent: 30
+  - name: HTML
+    percent: 4
+frameworks:
+  - name:
+highlight: true
+slug: daily-spinner
+---
+
+<v-main>
+  <v-container>
+
+<h1 align="center">Daily Spinner</h1>
+<div align="center">2020.8 ~ 2020.12</div>
+
+<p align="center">
+  <strong>
+   <a href="https://dailyspinner.netlify.app/" target="_blank">🚀 &nbsp; Demo</a>
+   ・ <a href="https://github.com/JooYoo/js-dailySpinner" target="_blank">👨🏻‍💻 &nbsp; Github</a>
+  </strong>
+</p>
+
+::: tip Contents
+[[toc]]
+:::
+
+## About
+
+A web app to pick the team members randomly, help teams to decide who will speak next.
+
+## Preview
+
+<p align="center">
+  <img src="https://media2.giphy.com/media/2K44FM6XOXf9czA9PC/giphy.gif" />
+</p>
+
+## Type
+
+- Web development: Web App
+
+## User story
+
+As a developer who works under the Scrum Framework, we have 15 minutes Daily Meeting every day. I want to have a tool which can pick the team member randomly so that we can decide who will speak next without awkwardness.
+
+## Technologies
+
+- Code: HTML, SCSS, JavaScript
+- Icon: SVG, emoji
+- Deployment: GitHub Pages
+
+## Setup
+
+1. clone the project
+2. install VS Code extension: Live Server
+3. run the project via Live Server
+4. The _dist_ folder include the latest version for this project.
+5. The SCSS code is compiling via VS Code extension: Live Sass Compiler
+
+</v-container>
+</main>

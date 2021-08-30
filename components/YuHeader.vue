@@ -6,6 +6,11 @@
     <v-spacer></v-spacer>
     <!-- TODO: iteration nav-btns -->
     <v-btn icon>
+      <NuxtLink class="no-deco" to="/">
+        <v-icon>mdi-home</v-icon>
+      </NuxtLink>
+    </v-btn>
+    <v-btn icon>
       <NuxtLink class="no-deco" to="/project">
         <v-icon>mdi-flask-empty-outline</v-icon>
       </NuxtLink>
