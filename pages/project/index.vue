@@ -2,8 +2,8 @@
   <v-main>
     <v-container>
       <v-row>
-        <v-col v-for="post of projectPosts" :key="post.title" cols="6">
-          <v-card>
+        <v-col v-for="post of projectPosts" :key="post.title" sm="6">
+          <v-card class="rounded-lg" elevation="8" outlined hover>
             <NuxtLink class="no-deco" :to="`project/${post.slug}`">
               <v-img :src="post.overviewImg" height="200px">
                 <v-card-title>
