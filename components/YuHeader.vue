@@ -16,7 +16,9 @@
       </NuxtLink>
     </v-btn>
     <v-btn icon>
-      <v-icon>mdi-lightning-bolt</v-icon>
+      <NuxtLink class="no-deco" to="/gotcha">
+        <v-icon>mdi-lightning-bolt</v-icon>
+      </NuxtLink>
     </v-btn>
     <v-btn icon>
       <v-icon>mdi-music-circle-outline</v-icon>

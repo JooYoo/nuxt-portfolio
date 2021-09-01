@@ -1,7 +1,7 @@
 <template>
   <v-main>
     <v-container>
-      <nuxt-content :document="projectPost" />
+      <nuxt-content :document="gotchaPost" />
     </v-container>
   </v-main>
 </template>
@@ -9,9 +9,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const projectPost = await $content('project', params.slug).fetch()
+    const gotchaPost = await $content('gotcha', params.slug).fetch()
 
-    return { projectPost }
+    return { gotchaPost }
   }
 }
 </script>
