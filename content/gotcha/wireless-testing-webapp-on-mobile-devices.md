@@ -4,6 +4,7 @@ date: 2020/11/29
 keyword: debug
 description: a skill mobile web dev must know
 type: blog
+slug: wireless-testing-webapp-on-mobile-devices
 ---
 
 <h1 align="center">Wireless testing WebApp on Mobile devices</h1>
