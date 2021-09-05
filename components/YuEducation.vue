@@ -16,7 +16,7 @@
               <img
                 v-for="(flagUrl, flagIndex) in education.flagUrl"
                 :key="flagIndex"
-                :src="flagUrl"
+                :src="require(`~/assets/icon/${flagUrl}.svg`)"
                 class="ml-5 flag-end"
                 height="30px"
               />

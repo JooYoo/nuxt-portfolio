@@ -2,7 +2,7 @@
   {
     "degree": "Fachinformatiker - Anwendungsentwicklung",
     "timeRoom": "2016 ~ 2019",
-    "flagUrl": ["https://www.flaticon.com/svg/static/icons/svg/197/197571.svg"],
+    "flagUrl": ["flag-de"],
     "icon": "👨🏻‍💻",
     "major": "Software Development",
     "studyAt": ["Robert-Bosch-Schule Ulm", "artiso solutions GmbH", "IHK Ulm"]
@@ -10,10 +10,7 @@
   {
     "degree": "Master of Science",
     "timeRoom": "2012 ~ 2014",
-    "flagUrl": [
-      "https://www.flaticon.com/svg/static/icons/svg/197/197374.svg",
-      "https://www.flaticon.com/svg/static/icons/svg/197/197375.svg"
-    ],
+    "flagUrl": ["flag-gb", "flag-cn"],
     "icon": "⏱",
     "major": "Project Management",
     "studyAt": [
@@ -24,10 +21,7 @@
   {
     "degree": "Bachelor of Business Studies",
     "timeRoom": "2008 ~ 2012",
-    "flagUrl": [
-      "https://www.flaticon.com/svg/static/icons/svg/197/197507.svg",
-      "https://www.flaticon.com/svg/static/icons/svg/197/197375.svg"
-    ],
+    "flagUrl": ["flag-au", "flag-cn"],
     "icon": "👨🏻‍💼",
     "major": "Business Studies",
     "studyAt": [
@@ -38,7 +32,7 @@
   {
     "degree": "Bachelor of Management Studies",
     "timeRoom": "2008 ~ 2012",
-    "flagUrl": ["https://www.flaticon.com/svg/static/icons/svg/197/197375.svg"],
+    "flagUrl": ["flag-cn"],
     "icon": "💸",
     "major": "Financial Management",
     "studyAt": ["Yunnan University of Finance and Economics"]
