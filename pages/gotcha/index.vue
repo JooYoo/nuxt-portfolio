@@ -1,11 +1,21 @@
 <template>
   <v-main>
     <v-container>
-      <h1>Gotcha page</h1>
-
       <v-list>
         <v-list-item v-for="post of gotchaPosts" :key="post.title">
-          {{ post.title }}
+          <NuxtLink
+            :to="`gotcha/${post.slug}`"
+            class="no-deco list-item--split"
+          >
+            <v-list-item-content>
+              <v-list-item-title v-text="post.title" />
+              <v-list-item-subtitle v-text="post.keyword" />
+            </v-list-item-content>
+
+            <v-list-item-action>
+              <v-list-item-action-text v-text="post.date" />
+            </v-list-item-action>
+          </NuxtLink>
         </v-list-item>
       </v-list>
     </v-container>
@@ -26,3 +36,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.list-item--split {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100%;
+}
+</style>
