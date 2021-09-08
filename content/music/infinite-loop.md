@@ -1,6 +1,7 @@
 ---
 title: Infinite Loop
 time: 2021
+cover: infinite-loop.png
 slug: infinite-loop
 ---
 
