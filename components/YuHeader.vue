@@ -1,7 +1,12 @@
 <template>
   <v-app-bar fixed elevate-on-scroll app class="px-5">
     <NuxtLink class="no-deco" to="/">
-      <v-btn text class="text-h4" v-text="'👨🏻‍💻'" />
+      <!-- <v-btn text class="text-h4" v-text="title" /> -->
+      <img
+        :src="require('~/assets/icon/lofi-coder.png')"
+        align="center"
+        class="avatar"
+      />
     </NuxtLink>
     <v-spacer></v-spacer>
 
@@ -37,3 +42,11 @@ export default {
   })
 }
 </script>
+
+<style lang="scss" scoped>
+.avatar {
+  height: 43px;
+  border-radius: 50%;
+  box-shadow: 1.5px 1px 10px 0.5px rgb(50, 50, 50);
+}
+</style>
