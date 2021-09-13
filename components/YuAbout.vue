@@ -25,21 +25,27 @@ export default {
 </script>
 
 <style lang="scss">
-.music-service-link {
+.external-link {
   font-weight: bold;
   text-decoration: none;
 }
-.music-service-link--spotify {
-  border-bottom: 1px dotted #1db954;
-  color: #1db954 !important;
-}
 
-.music-service-link--apple {
+.external-link--liebherr {
   border-bottom: 1px dotted #c2cad7;
   color: #c2cad7 !important;
 }
 
-.music-service-link--soundcloud {
+.external-link--spotify {
+  border-bottom: 1px dotted #1db954;
+  color: #1db954 !important;
+}
+
+.external-link--apple {
+  border-bottom: 1px dotted #c2cad7;
+  color: #c2cad7 !important;
+}
+
+.external-link--soundcloud {
   border-bottom: 1px dotted #fe5000;
   color: #fe5000 !important;
 }
