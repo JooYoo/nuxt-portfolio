@@ -1,18 +1,11 @@
 ---
 title: Daily Spinner
-description: Welcome to my first blog post using the content module.
+description: a web app to pick the team members randomly, help teams to decide who will speak next
 overviewImg: https://images.unsplash.com/photo-1509515837298-2c67a3933321?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80
-languages:
-  - name: JavaScript
-    percent: 66
-  - name: Sass
-    percent: 30
+techs:
   - name: HTML
-    percent: 4
-frameworks:
-  - name:
-highlight: true
-slug: daily-spinner
+  - name: Sass
+  - name: JavaScript
 ---
 
 <v-main>

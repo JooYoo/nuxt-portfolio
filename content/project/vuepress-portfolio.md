@@ -1,21 +1,14 @@
 ---
 title: Yu Portfolio
-description: A portfolio website made by Vuepress
-type: project
-# sidebar: auto
+description: a portfolio website to introduce myself
 overviewImg: https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=920&q=80
-languages:
-  - name: JavaScript
-    percent: 90
-  - name: Stylus
-    percent: 5
+techs:
   - name: HTML
-    percent: 5
-frameworks:
+  - name: Stylus
+  - name: JavaScript
   - name: Vue
-  - name: Vuetify
   - name: Vuepress
-highlight: true
+  - name: Vuetify
 ---
 
 <h1 align="center"> Yu Portfolio</h1>

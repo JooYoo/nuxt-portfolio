@@ -1,22 +1,15 @@
 ---
 title: Infinity Card
 description: a tool to memorize new vocabulary
-type: project
 overviewImg: https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80
-languages:
+techs:
   - name: HTML
-    percent: 22.6
   - name: Sass
-    percent: 15.2
   - name: TypeScript
-    percent: 61.7
   - name: JavaScript
-    percent: 0.5
-frameworks:
   - name: Angular
   - name: ionic
-  - name: chartjs
-highlight: false
+  - name: Chartjs
 ---
 
 <h1 align="center">Infinity Card</h1>

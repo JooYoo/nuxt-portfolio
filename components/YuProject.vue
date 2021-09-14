@@ -4,31 +4,32 @@
       <h3 class="text-h3 font-weight-thin mb-10">Project</h3>
 
       <v-row>
-        <!-- TODO: in small display cols is 12 -->
         <v-col
           v-for="(post, index) in projectPosts"
           :key="post.title"
-          :cols="calcCols(index)"
+          sm="12"
+          :md="calcCols(index)"
         >
           <v-card elevation="8" outlined hover class="rounded-lg">
             <v-img
               :src="post.overviewImg"
-              class="white--text"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              class="white--text pt-2 pl-2"
+              gradient="to top, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               height="200px"
             >
-              <v-card-title v-text="post.title"></v-card-title>
+              <v-card-title class="text-h5" v-text="post.title" />
+              <v-card-subtitle v-text="post.description" />
             </v-img>
 
-            <v-card-actions class="justify-center">
-              <v-btn
-                v-for="iconName of icons"
-                :key="iconName"
-                icon
-                class="mx-3"
-              >
-                <v-icon v-text="iconName">mdi-heart</v-icon>
-              </v-btn>
+            <v-card-actions class="my-2">
+              <img
+                v-for="(tech, techIndex) in post.techs"
+                :key="techIndex"
+                :src="require(`~/assets/icon/tech/${techDir(tech.name)}`)"
+                :title="tech.name"
+                class="mx-4"
+                height="30px"
+              />
             </v-card-actions>
           </v-card>
         </v-col>
@@ -47,19 +48,25 @@
 <script>
 export default {
   data: () => ({
-    projectPosts: [],
-    cols: [],
-    // TODO: display each Project tech logo
-    icons: ['mdi-heart', 'mdi-bookmark', 'mdi-share-variant']
+    projectPosts: []
   }),
   computed: {
     calcCols() {
       return (index) => (index === 0 ? 12 : 6)
+    },
+    techDir() {
+      return (techName) => {
+        if (techName === 'Vuepress') {
+          return 'Vuepress.png'
+        } else {
+          return `${techName}.svg`
+        }
+      }
     }
   },
   async beforeCreate() {
     const posts = await this.$content('project')
-      .only(['title', 'description', 'overviewImg', 'slug'])
+      .only(['title', 'description', 'overviewImg', 'techs', 'slug'])
       .sortBy('createAt', 'asc')
       .limit(3)
       .fetch()
