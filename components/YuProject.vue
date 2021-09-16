@@ -16,8 +16,10 @@
 
       <v-row justify="center" class="mt-10">
         <v-btn rounded x-large elevation="7">
-          <v-icon left>mdi-flask-empty-outline</v-icon>
-          more
+          <NuxtLink to="/project" class="no-deco">
+            <v-icon left>mdi-flask-empty-outline</v-icon>
+            more
+          </NuxtLink>
         </v-btn>
       </v-row>
     </v-container>
