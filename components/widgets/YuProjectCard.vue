@@ -1,5 +1,5 @@
 <template>
-  <v-card elevation="8" outlined hover class="rounded-lg">
+  <v-card elevation="10" outlined hover class="rounded-lg">
     <NuxtLink :to="`project/${post.slug}`" class="no-deco">
       <v-img
         :src="post.overviewImg"
@@ -11,14 +11,14 @@
         <v-card-subtitle v-text="post.description" />
       </v-img>
 
-      <v-card-actions class="my-2">
+      <v-card-actions class="my-2 v-card__actions--overflow">
         <img
           v-for="(tech, techIndex) in post.techs"
           :key="techIndex"
           :src="require(`~/assets/icon/tech/${techDir(tech.name)}`)"
           :title="tech.name"
           class="mx-4"
-          height="30px"
+          height="25px"
         />
       </v-card-actions>
     </NuxtLink>
@@ -42,3 +42,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.v-card__actions--overflow {
+  overflow: auto;
+}
+</style>

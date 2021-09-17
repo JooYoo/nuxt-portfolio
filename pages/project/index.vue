@@ -2,20 +2,8 @@
   <v-main>
     <v-container>
       <v-row>
-        <v-col v-for="post of projectPosts" :key="post.title" sm="6">
-          <v-card class="rounded-lg" elevation="8" outlined hover>
-            <NuxtLink :to="`project/${post.slug}`" class="no-deco">
-              <v-img :src="post.overviewImg" height="200px">
-                <v-card-title>
-                  {{ post.title }}
-                </v-card-title>
-              </v-img>
-
-              <v-card-subtitle>
-                {{ post.description }}
-              </v-card-subtitle>
-            </NuxtLink>
-          </v-card>
+        <v-col v-for="post of projectPosts" :key="post.title" sm="12" md="6">
+          <WidgetsYuProjectCard :post="post" />
         </v-col>
       </v-row>
     </v-container>
@@ -26,7 +14,7 @@
 export default {
   async asyncData({ $content, params }) {
     const projectPosts = await $content('project', params.slug)
-      .only(['title', 'description', 'overviewImg', 'slug'])
+      .only(['title', 'description', 'overviewImg', 'techs', 'slug'])
       .sortBy('createAt', 'asc')
       .fetch()
 
@@ -36,11 +24,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.project-overview__card-img {
-  height: 200px;
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
-}
-</style>
