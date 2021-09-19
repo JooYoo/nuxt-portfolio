@@ -1,13 +1,24 @@
 <template>
-  <v-card elevation="10" outlined hover class="rounded-lg">
-    <NuxtLink :to="`project/${post.slug}`" class="no-deco">
+  <v-card
+    elevation="10"
+    outlined
+    hover
+    class="rounded-lg"
+  >
+    <NuxtLink
+      :to="`project/${post.slug}`"
+      class="no-deco"
+    >
       <v-img
         :src="post.overviewImg"
-        class="white--text pt-2 pl-2"
+        class="white--text pt-2 pl-2 img-round-corner"
         gradient="to top, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="200px"
       >
-        <v-card-title class="text-h5" v-text="post.title" />
+        <v-card-title
+          class="text-h5"
+          v-text="post.title"
+        />
         <v-card-subtitle v-text="post.description" />
       </v-img>
 
@@ -38,13 +49,18 @@ export default {
           return `${techName}.svg`
         }
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .v-card__actions--overflow {
   overflow: auto;
+}
+
+.img-round-corner {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 </style>
