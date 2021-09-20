@@ -5,7 +5,7 @@
     <v-row>
       <v-col>
         <v-card
-          class="mx-auto mt-10 pt-5 rounded-lg"
+          class="mx-auto mt-10 py-5 rounded-lg"
           outlined
         >
           <v-list-item>
@@ -18,17 +18,21 @@
               </v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
-
+          <v-divider class="mx-4 my-4"></v-divider>
           <v-card-actions>
-            <v-progress-linear
-              color="amber"
-              height="25"
-            ></v-progress-linear>
+            <img
+              v-for="(techLogo, i) of frontendSkills"
+              :key="i"
+              :src="require(`~/assets/icon/tech/${techLogo.name}.svg`)"
+              :title="techLogo.name"
+              height="50px"
+              class="mx-5"
+            />
           </v-card-actions>
         </v-card>
 
         <v-card
-          class="mx-auto mt-10 pt-5 rounded-lg"
+          class="mx-auto mt-10 py-5 rounded-lg"
           outlined
         >
           <v-list-item>
@@ -41,12 +45,17 @@
               </v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
-
+          <v-divider class="mx-4 my-4"></v-divider>
           <v-card-actions>
-            <v-progress-linear
-              color="amber"
-              height="25"
-            ></v-progress-linear>
+            <img
+              v-for="(techLogo, i) of backendSkills"
+              :key="i"
+              :src="require(`~/assets/icon/tech/${techLogo.name}.svg`)"
+              :title="techLogo.name"
+              height="50px"
+              class="mx-5"
+              :style="techLogo.name==='Express'?'height:30px':''"
+            />
           </v-card-actions>
         </v-card>
       </v-col>
@@ -69,10 +78,10 @@ export default {
     ],
     backendSkills: [
       { name: 'Nodejs' },
-      { name: 'Express' },
       { name: 'MongoDB' },
       { name: 'csharp' },
       { name: 'dotnet' },
+      { name: 'Express' },
     ],
   }),
 }
