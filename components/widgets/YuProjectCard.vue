@@ -42,13 +42,8 @@ export default {
   props: ['post'],
   computed: {
     techDir() {
-      return (techName) => {
-        if (techName === 'Vuepress') {
-          return 'Vuepress.png'
-        } else {
-          return `${techName}.svg`
-        }
-      }
+      return (techName) =>
+        techName === 'Vuepress' ? 'Vuepress.png' : `${techName}.svg`
     },
   },
 }
