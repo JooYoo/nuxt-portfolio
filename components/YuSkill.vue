@@ -8,7 +8,6 @@
           :subtitle="frontendSkill.subtitle"
           :skills="frontendSkill.techlogos"
         />
-
         <WidgetsYuSkillCard
           :title="backendSkill.title"
           :subtitle="backendSkill.subtitle"
@@ -26,23 +25,23 @@ export default {
     frontendSkill: {
       title: 'Frontend',
       subtitle:
-        "My go-to tool at the work is <strong>Vue</strong> and it's ecosystem. I'm also a big fan of <strong>React</strong>.",
+        "My go-to tool to build WebApp is <strong>Vue</strong> and it's ecosystem. I'm also a big fan of <strong>React</strong>.",
       techlogos: [
         { name: 'Vue' },
         { name: 'Nuxtjs' },
         { name: 'Vuetify' },
+        { name: 'Vuepress' },
         { name: 'React' },
         { name: 'Redux' },
         { name: 'Sass' },
         { name: 'ionic' },
-        // { name: 'VuePress' },
       ],
     },
 
     backendSkill: {
       title: 'Backend',
       subtitle:
-        "I'm using <strong>C#</strong> at the work. <strong>Nodejs</strong> is my choice when I develop my own project.",
+        "I'm using <strong>.NET Stack</strong> at the work. <strong>Nodejs</strong> is my choice when I develop my own project.",
       techlogos: [
         { name: 'csharp' },
         { name: 'dotNetCore' },

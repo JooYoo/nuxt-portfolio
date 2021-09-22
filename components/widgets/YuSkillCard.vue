@@ -22,11 +22,11 @@
       <img
         v-for="(skill, i) of skills"
         :key="i"
-        :src="require(`~/assets/icon/tech/${skill.name}.svg`)"
+        :src="require(`~/assets/icon/tech/${techDir(skill.name)}`)"
         :title="skill.name"
         :style="skill.name==='Express'?'height:30px':''"
         height="50px"
-        class="mx-5"
+        class="mx-5 skill-tech-icon--lift"
       />
     </v-card-actions>
   </v-card>
@@ -37,6 +37,20 @@
 export default {
   // eslint-disable-next-line vue/require-prop-types
   props: ['title', 'subtitle', 'skills'],
+  computed: {
+    techDir() {
+      return (techName) =>
+        techName === 'Vuepress' ? 'Vuepress.png' : `${techName}.svg`
+    },
+  },
 }
 </script>
+
+<style lang="scss" scoped>
+.skill-tech-icon--lift {
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+</style>
 
