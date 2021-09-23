@@ -25,7 +25,7 @@ export default {
     frontendSkill: {
       title: 'Frontend',
       subtitle:
-        "My go-to tool to build WebApp is <strong>Vue</strong> and it's ecosystem. I'm also a big fan of <strong>React</strong>.",
+        'My go-to tool to build WebApp is <strong style="color: #41B883">Vue</strong> and Vue ecosystem. I\'m also a big fan of <strong style="color: #00D8FF">React</strong>.',
       techlogos: [
         { name: 'Vue' },
         { name: 'Nuxtjs' },
@@ -41,7 +41,7 @@ export default {
     backendSkill: {
       title: 'Backend',
       subtitle:
-        "I'm using <strong>.NET Stack</strong> at the work. <strong>Nodejs</strong> is my choice when I develop my own project.",
+        'I\'m using <strong style="color:#976dce">.NET Stack</strong> at the work. <strong style="color:#539E43">Nodejs</strong> is my choice when I develop my own project.',
       techlogos: [
         { name: 'csharp' },
         { name: 'dotNetCore' },
