@@ -81,7 +81,7 @@ export default {
   right: 0;
   font-size: 300px;
   font-weight: bolder;
-  opacity: 0.03;
+  opacity: 0.05;
   user-select: none;
 }
 </style>

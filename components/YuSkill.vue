@@ -4,14 +4,14 @@
     <v-row>
       <v-col>
         <WidgetsYuSkillCard
-          :title="frontendSkill.title"
-          :subtitle="frontendSkill.subtitle"
-          :skills="frontendSkill.techlogos"
+          :title="skills.frontendSkill.title"
+          :subtitle="skills.frontendSkill.subtitle"
+          :skills="skills.frontendSkill.techlogos"
         />
         <WidgetsYuSkillCard
-          :title="backendSkill.title"
-          :subtitle="backendSkill.subtitle"
-          :skills="backendSkill.techlogos"
+          :title="skills.backendSkill.title"
+          :subtitle="skills.backendSkill.subtitle"
+          :skills="skills.backendSkill.techlogos"
         />
       </v-col>
     </v-row>
@@ -19,37 +19,10 @@
 </template>
 
 <script>
-// TODO: refactor: save as json file
+import skillData from '~/static/skill.json'
 export default {
   data: () => ({
-    frontendSkill: {
-      title: 'Frontend',
-      subtitle:
-        'My go-to tool to build WebApp is <strong style="color: #41B883">Vue</strong> and Vue ecosystem. I\'m also a big fan of <strong style="color: #00D8FF">React</strong>.',
-      techlogos: [
-        { name: 'Vue' },
-        { name: 'Nuxtjs' },
-        { name: 'Vuetify' },
-        { name: 'Vuepress' },
-        { name: 'React' },
-        { name: 'Redux' },
-        { name: 'Sass' },
-        { name: 'ionic' },
-      ],
-    },
-
-    backendSkill: {
-      title: 'Backend',
-      subtitle:
-        'I\'m using <strong style="color:#976dce">.NET Stack</strong> at the work. <strong style="color:#539E43">Nodejs</strong> is my choice when I develop my own project.',
-      techlogos: [
-        { name: 'csharp' },
-        { name: 'dotNetCore' },
-        { name: 'Nodejs' },
-        { name: 'MongoDB' },
-        { name: 'Express' },
-      ],
-    },
+    skills: skillData,
   }),
 }
 </script>
