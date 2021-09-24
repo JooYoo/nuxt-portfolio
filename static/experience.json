@@ -1,14 +1,25 @@
 [
   {
+    "color": "orange",
+    "year": "2021",
+    "title": "Software Developer",
+    "where": "Liebherr International AG (DE) • Full-time",
+    "content": [
+      "● Liebherr eCommerce plateform",
+      "● Full Stack Development"
+    ]
+  },
+  {
     "color": "pink",
     "year": "2019",
     "title": "Frontend Developer",
     "where": "stellar design und engineering GmbH (DE) • Full-time",
     "content": [
-      "• Frontend Development for Automotive-Infotainment-System",
-      "• UI-Components Engineering",
-      "• Collaboration with UI/UX designers",
-      "◦ Angular, Sass, CSS, TypeScript, HTML, Git, Jenkins, Atlassian, Scrum"
+      "● Automotive-Infotainment-System",
+      "● Frontend Development",
+      "● UI-Components Engineering",
+      "● Collaboration with UI/UX designers",
+      "◦ Sass, Angular, TypeScript, Git, Jenkins, Atlassian, Scrum, Sketch"
     ]
   },
   {
@@ -17,22 +28,11 @@
     "title": "Software Developer",
     "where": "artiso solutions GmbH (DE) • Apprenticeship",
     "content": [
-      "• Software prototyping for Manufacturing Digitization",
-      "• AR/XR research and app development",
-      "• Internal software development",
-      "◦ C#, WPF, ASP.Net, Angular, HTML, CSS, TypeScript, Bootstrap, Material UI, UIKit, Tensorflowjs, ml5, PWA, Git, Unity3D, Hololens, TFS, Scrum"
-    ]
-  },
-  {
-    "color": "orange",
-    "year": "2015",
-    "title": "Chinese Tutor Online",
-    "where": "online (CN) • Freelance",
-    "content": [
-      "• Teach Chinese online",
-      "• Manage and operate the business process independently",
-      "• Develop eBooks, Website, and App for teaching",
-      "◦ HTML, CSS, Javascript, WordPress"
+      "● Manufacturing Digitization",
+      "● Software prototyping",
+      "● AR/XR research and app development",
+      "● Internal software development",
+      "◦ C#, WPF, ASP.Net, Angular, TypeScript, Bootstrap, Material UI, UIKit, Tensorflowjs, ml5, PWA, Git, Unity3D, Hololens, TFS, Scrum, Adobe XD"
     ]
   }
 ]

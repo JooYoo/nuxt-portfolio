@@ -37,13 +37,13 @@
 </template>
 
 <script>
-import JsonExperiences from '~/static/experience.json'
+import experienceData from '~/static/experience.json'
 
 export default {
   name: 'YuExperience',
 
   data: () => ({
-    experiences: JsonExperiences
-  })
+    experiences: experienceData,
+  }),
 }
 </script>
