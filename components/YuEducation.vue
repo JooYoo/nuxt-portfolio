@@ -43,7 +43,8 @@
             >{{ studyAt }}</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
-        <v-divider></v-divider>
+        <v-divider v-if="educationIndex!==educations.length-1"></v-divider>
+
       </v-list>
     </v-card>
   </v-container>
