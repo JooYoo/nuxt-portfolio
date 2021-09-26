@@ -11,7 +11,7 @@ iframesrc: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/pla
 <h1 align="center">Infinite Loop</h1>
 <div align="center">2021</div>
 
-<templates-yu-music-playlist :src="iframesrc"></templates-yu-music-playlist>
+<WidgetsMdEmbeddedPlaylist :src="iframesrc"></WidgetsMdEmbeddedPlaylist>
 
 ### TODO: interesting moments about the album making
 

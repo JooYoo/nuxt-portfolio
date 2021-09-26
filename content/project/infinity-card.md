@@ -1,7 +1,15 @@
 ---
 title: Infinity Card
+timeRange: 2018.9 ~ 2019.01
 description: a tool to memorize new vocabulary
 overviewImg: https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80
+links:
+  - demo: https://jooyoo.github.io/ionic-infinityCard
+  - github: https://github.com/JooYoo/js-dailySpinner
+screenshots:
+  - url: https://farm5.staticflickr.com/4849/33097439698_af16aa6a72.jpg
+  - url: https://farm5.staticflickr.com/4881/40008301783_f2ae188bd9.jpg
+  - url: https://farm5.staticflickr.com/4867/46248552374_8a722797a1.jpg
 techs:
   - name: HTML
   - name: Sass
@@ -42,7 +50,7 @@ A flash-card app helps the user organize and memorize information. So that the u
 - iOS
 - Android
 
-<TemplatesYuGap></TemplatesYuGap>
+<WidgetsMdGap></WidgetsMdGap>
 
 ## **User story**
 
@@ -54,10 +62,12 @@ As a language learner, I need to memorize new vocabulary and sentences of the ne
 - Framework: Angular, ionic, chart.js
 - Deployment: GitHub Pages
 
-<TemplatesYuGap></TemplatesYuGap>
+<WidgetsMdGap></WidgetsMdGap>
 
 ## **Setup**
 
 1. clone the project
 2. `npm install`
 3. `npm run start`
+
+<WidgetsMdGap></WidgetsMdGap>
