@@ -26,19 +26,15 @@ techs:
 
 <v-container>
 
-<p align="center">
-    <img style="border-radius: 10px; border: 1px lightgray solid;" src="https://farm5.staticflickr.com/4849/33097439698_af16aa6a72.jpg" />
-    <img style="border-radius: 10px; border: 1px lightgray solid;" src="https://farm5.staticflickr.com/4881/40008301783_f2ae188bd9.jpg" />
-    <img style="border-radius: 10px; border: 1px lightgray solid;" src="https://farm5.staticflickr.com/4867/46248552374_8a722797a1.jpg" />
-</p>
+<WidgetsMdScreenshot :screenshots="screenshots"></WidgetsMdScreenshot>
 
-<WidgetsMdGap></WidgetsMdGap>
+<br/>
 
 ## About
 
 A flash-card app helps the user organize and memorize information. So that the user can learn the vocabulary of a new language efficiently.
 
-<WidgetsMdGap></WidgetsMdGap>
+<br/>
 
 ## Supported Platform
 
@@ -46,13 +42,13 @@ A flash-card app helps the user organize and memorize information. So that the u
 - iOS
 - Android
 
-<WidgetsMdGap></WidgetsMdGap>
+<br/>
 
 ## **User story**
 
 As a language learner, I need to memorize new vocabulary and sentences of the new language. I want to have a tool that can help me to learn efficiently and allows me to learn wherever I like.
 
-<WidgetsMdGap></WidgetsMdGap>
+<br/>
 
 ## **Technologies**
 
@@ -60,7 +56,7 @@ As a language learner, I need to memorize new vocabulary and sentences of the ne
 - Framework: Angular, ionic, chart.js
 - Deployment: GitHub Pages
 
-<WidgetsMdGap></WidgetsMdGap>
+<br/>
 
 ## **Setup**
 
@@ -68,6 +64,6 @@ As a language learner, I need to memorize new vocabulary and sentences of the ne
 2. `npm install`
 3. `npm run start`
 
-<WidgetsMdGap></WidgetsMdGap>
+<br/>
 
 </container>

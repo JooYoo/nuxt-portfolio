@@ -9,7 +9,7 @@
       v-text="time"
     />
 
-    <WidgetsMdGap></WidgetsMdGap>
+    <br />
 
     <p class="text-center">
       <strong>
