@@ -15,6 +15,7 @@
 
 <script>
 export default {
-  props: ['src']
+  // eslint-disable-next-line vue/require-prop-types
+  props: ['src'],
 }
 </script>

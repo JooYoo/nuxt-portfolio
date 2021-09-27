@@ -1,11 +1,13 @@
 ---
 title: Infinity Card
-timeRange: 2018.9 ~ 2019.01
+time: 2018.9 ~ 2019.01
 description: a tool to memorize new vocabulary
 overviewImg: https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80
 links:
-  - demo: https://jooyoo.github.io/ionic-infinityCard
-  - github: https://github.com/JooYoo/js-dailySpinner
+  - name: 🚀Demo
+    url: https://jooyoo.github.io/ionic-infinityCard
+  - name: 👨🏻‍💻Github
+    url: https://github.com/JooYoo/js-dailySpinner
 screenshots:
   - url: https://farm5.staticflickr.com/4849/33097439698_af16aa6a72.jpg
   - url: https://farm5.staticflickr.com/4881/40008301783_f2ae188bd9.jpg
@@ -20,29 +22,23 @@ techs:
   - name: Chartjs
 ---
 
-<h1 align="center">Infinity Card</h1>
-<div align="center">2018.9 ~ 2019.01</div>
+<WidgetsMdHeader :title="title" :time="time" :links="links"></WidgetsMdHeader>
 
-<v-divider></v-divider>
-
-<p align="center">
-  <strong>
-    <a href="https://jooyoo.github.io/ionic-infinityCard" target="_blank" class="no-deco">🚀Demo</a>
-    ・ <a href="https://github.com/JooYoo/js-dailySpinner" target="_blank" class="no-deco">👨🏻‍💻Github</a>
-  </strong>
-</p>
-
-## About
-
-A flash-card app helps the user organize and memorize information. So that the user can learn the vocabulary of a new language efficiently.
-
-## Preview
+<v-container>
 
 <p align="center">
     <img style="border-radius: 10px; border: 1px lightgray solid;" src="https://farm5.staticflickr.com/4849/33097439698_af16aa6a72.jpg" />
     <img style="border-radius: 10px; border: 1px lightgray solid;" src="https://farm5.staticflickr.com/4881/40008301783_f2ae188bd9.jpg" />
     <img style="border-radius: 10px; border: 1px lightgray solid;" src="https://farm5.staticflickr.com/4867/46248552374_8a722797a1.jpg" />
 </p>
+
+<WidgetsMdGap></WidgetsMdGap>
+
+## About
+
+A flash-card app helps the user organize and memorize information. So that the user can learn the vocabulary of a new language efficiently.
+
+<WidgetsMdGap></WidgetsMdGap>
 
 ## Supported Platform
 
@@ -55,6 +51,8 @@ A flash-card app helps the user organize and memorize information. So that the u
 ## **User story**
 
 As a language learner, I need to memorize new vocabulary and sentences of the new language. I want to have a tool that can help me to learn efficiently and allows me to learn wherever I like.
+
+<WidgetsMdGap></WidgetsMdGap>
 
 ## **Technologies**
 
@@ -71,3 +69,5 @@ As a language learner, I need to memorize new vocabulary and sentences of the ne
 3. `npm run start`
 
 <WidgetsMdGap></WidgetsMdGap>
+
+</container>

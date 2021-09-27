@@ -4,6 +4,6 @@
 
 <style lang="scss" scoped>
 .gap {
-  height: 16px;
+  height: 20px;
 }
 </style>
