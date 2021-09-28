@@ -7,20 +7,19 @@ type: blog
 slug: multiple-github-accounts-for-one-computer
 ---
 
-<h1 align="center">Multiple GitHub accounts for one computer</h1>
-<div align="center">2020.12.31</div>
-
-::: tip Contents
-[[toc]]
-:::
+<WidgetsMdHeader :title="title" :time="date"></WidgetsMdHeader>
 
 ## 🎮 Usage
 
 It is possible that we need to use multiple Git accounts on the same computer, e.g. one for work-project another one for side-project. In this case, we want to use the account separately when we push the changes.
 
+<br/>
+
 ## 🎯 Goal
 
 Use the _work-project-account_ for work, and the _side-project-account_ for the side-project on the same computer.
+
+<br/>
 
 ## 🦶🏻 Steps
 
@@ -43,6 +42,8 @@ Use the _work-project-account_ for work, and the _side-project-account_ for the 
 
 4. Quit the VIM mode: `:q` + `enter`
 
+<br/>
+
 ### Step 2. Active local credential
 
 1. Still at the Project location
@@ -52,6 +53,8 @@ Use the _work-project-account_ for work, and the _side-project-account_ for the 
    ```
 
 2. If we check the local _git config_ via the _Step 1_ , we can see `useHttpPath = true`
+
+<br/>
 
 ### Step 3. Setup the current project account
 
