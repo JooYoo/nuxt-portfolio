@@ -7,7 +7,7 @@
           :key="link.name"
           target="_blank"
           :href="link.url"
-          class="d-flex align-center no-deco"
+          class="d-flex align-center no-deco music-link"
         >
           <v-img
             :src="require(`~/assets/icon/music/${link.logo}`)"
@@ -16,9 +16,8 @@
           />
           {{link.name}}
         </a>
-
       </div>
-      <v-row>
+      <v-row class="mb-5">
         <v-col
           v-for="post in musicPosts"
           :key="post.title"
@@ -82,6 +81,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.music-link {
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
 .music-cover {
   transition: all 0.2s ease-in-out;
   &:hover {

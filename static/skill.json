@@ -8,10 +8,9 @@
           { "name": "Nuxtjs" },
           { "name": "Vuetify" },
           { "name": "Vuepress" },
-          { "name": "React" },
-          { "name": "Redux" },
           { "name": "Sass" },
-          { "name": "ionic" }
+          { "name": "React" },
+          { "name": "Redux" }
         ]
     },
   

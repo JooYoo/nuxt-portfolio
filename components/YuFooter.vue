@@ -6,8 +6,8 @@
   >
     <v-row align="center">
       <v-col class="text-left">
-        © {{ new Date().getFullYear() }} -
-        <strong>ZhuYu</strong>
+        © {{ new Date().getFullYear() }} - made with ❤️ by
+        <strong class="nuxt-txt">NuxtJS</strong>
       </v-col>
 
       <v-btn
@@ -44,5 +44,8 @@ export default {
 .footer__link-icon {
   text-decoration: none;
   color: #fff;
+}
+.nuxt-txt {
+  color: #00dc82;
 }
 </style>
