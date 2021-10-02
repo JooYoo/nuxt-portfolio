@@ -6,7 +6,8 @@
   >
     <v-row align="center">
       <v-col class="text-left">
-        © {{ new Date().getFullYear() }} - made with ❤️ by
+        <!-- © {{ new Date().getFullYear() }} -  -->
+        Made with ❤️ by
         <strong class="nuxt-txt">NuxtJS</strong>
       </v-col>
 
