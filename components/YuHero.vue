@@ -18,14 +18,12 @@
 <script>
 export default {
   data: () => ({
-    bg: 'https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg'
-  })
+    bg: 'https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg',
+  }),
 }
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
-
 .xiaowei {
   font-family: 'ZCOOL XiaoWei', sans-serif !important;
 }
