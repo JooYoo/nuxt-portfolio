@@ -1,22 +1,15 @@
 <template>
-  <v-footer
-    app
-    height="80px"
-    class="px-6"
-  >
+  <v-footer app height="80px" class="px-6">
     <v-row align="center">
       <v-col class="text-left">
         <!-- © {{ new Date().getFullYear() }} -  -->
-        Made with ❤️ by
-        <strong class="nuxt-txt">NuxtJS</strong>
+        Made with ❤️ &nbsp;&nbsp;by
+        <a href="https://nuxtjs.org/" target="_blank" class="no-deco">
+          <strong class="nuxt-txt">NuxtJS</strong>
+        </a>
       </v-col>
 
-      <v-btn
-        v-for="contact in contacts"
-        :key="contact.id"
-        icon
-        class="mx-4"
-      >
+      <v-btn v-for="contact in contacts" :key="contact.id" icon class="mx-4">
         <a
           :href="contact.link"
           :target="contact.target"
@@ -35,9 +28,9 @@ import contactData from '~/static/contact.json'
 export default {
   data() {
     return {
-      contacts: contactData,
+      contacts: contactData
     }
-  },
+  }
 }
 </script>
 

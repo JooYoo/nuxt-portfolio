@@ -11,11 +11,11 @@ iframesrc: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/pla
 <h1 align="center">Infinite Loop</h1>
 <div align="center">2021</div>
 
-TODO: album links
+<WidgetsMdMusicLink></WidgetsMdMusicLink>
 
-<WidgetsMdEmbeddedPlaylist :src="iframesrc"></WidgetsMdEmbeddedPlaylist>
+<WidgetsMdPlaylist :src="iframesrc"></WidgetsMdPlaylist>
 
-Hi, excited to announce. I just released my 1st album 🔥Infinite Loop🔥. It's available on Spotify, AppleMusic, AmazonMusic, and SoundCloud now.
+Hi there. I just released my 1st album 🔥Infinite Loop🔥. It's available on Spotify, AppleMusic, AmazonMusic, and SoundCloud now.
 
 The album includes 10 songs. I consider it as a product. Here is the User Story. As a developer, when I coding, I want to have some background music to help me concentrate and decrease the stress so that I can do my job more efficiently. Because it's a product, so I also considered how to ensure its user experience. The characteristics of a good UX are 4: Usable, Equitable, Useful, and Enjoyable. I tried to meet these four characteristics in the process of making this album. I'm happy with the output so far. The 10 songs are all made with ❤️ for developers. Hope you like it as well.
 
