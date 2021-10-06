@@ -9,13 +9,22 @@
           class="d-flex child-flex"
           cols="4"
         >
-          <NuxtLink :to="`music/${post.slug}`" class="no-deco music-cover">
+          <NuxtLink
+            :to="`music/${post.slug}`"
+            class="no-deco album-cover-container"
+          >
             <v-img
               :src="require(`~/assets/album/${post.cover}`)"
               aspect-ratio="1"
-              class="grey lighten-2"
-            >
-            </v-img>
+              class="grey lighten-2 album-cover-img"
+            />
+            <div class="pt-5 album-cover-txt">
+              <div class="text-h6">{{ post.title }}</div>
+              <span class="text-h6 text--disabled">Lofi Coder・</span>
+              <span class="text-h6 font-weight-regular text--disabled">
+                {{ post.time }}
+              </span>
+            </div>
           </NuxtLink>
         </v-col>
       </v-row>
@@ -39,11 +48,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.music-cover {
+.album-cover-container {
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(0.95);
-    // TODO: hover to add a darkner to display Album-title, Album-time
   }
+}
+.album-cover-img {
+  border-radius: 8px;
 }
 </style>
