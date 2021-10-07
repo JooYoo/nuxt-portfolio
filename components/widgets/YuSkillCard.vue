@@ -1,25 +1,15 @@
 <template>
-  <v-card
-    class="mx-auto mt-10 py-5 rounded-lg skill-tech-card"
-    outlined
-  >
+  <v-card class="mx-auto mt-10 py-5 rounded-lg skill-tech-card" outlined>
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title
-          class="text-h5 mb-1"
-          v-text="title"
-        />
+        <v-list-item-title class="text-h5 mb-1" v-text="title" />
         <!-- eslint-disable vue/no-v-html -->
-        <v-list-item-subtitle
-          class="mt-2"
-          v-html="subtitle"
-        />
+        <v-list-item-subtitle class="mt-2" v-html="subtitle" />
       </v-list-item-content>
       <!--eslint-enable-->
     </v-list-item>
     <v-divider class="mx-4 my-3"></v-divider>
     <v-card-actions>
-
       <img
         v-for="(skill, i) of skills"
         :key="i"
@@ -28,17 +18,12 @@
         :style="setSize(skill.name)"
         height="50px"
         class="mx-5 skill-tech-icon--lift"
-        @mouseover="isHover = true, hoverName(skill.name)"
+        @mouseover=";(isHover = true), hoverName(skill.name)"
         @mouseleave="isHover = false"
       />
-      <div
-        v-show="isHover"
-        class="skill-tech-big-name"
-      >{{bigName}}</div>
-
+      <div v-show="isHover" class="skill-tech-big-name">{{ bigName }}</div>
     </v-card-actions>
   </v-card>
-
 </template>
 
 <script>
@@ -47,7 +32,7 @@ export default {
   props: ['title', 'subtitle', 'skills'],
   data: () => ({
     isHover: false,
-    bigName: '',
+    bigName: ''
   }),
   computed: {
     setSuffix() {
@@ -56,13 +41,13 @@ export default {
     },
     setSize() {
       return (skillName) => (skillName === 'Express' ? 'height:30px' : '')
-    },
+    }
   },
   methods: {
     hoverName(skillName) {
       this.bigName = skillName
-    },
-  },
+    }
+  }
 }
 </script>
 
@@ -71,6 +56,8 @@ export default {
   overflow: hidden;
 }
 .skill-tech-icon--lift {
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
   &:hover {
     transform: scale(1.2);
   }
@@ -85,4 +72,3 @@ export default {
   user-select: none;
 }
 </style>
-

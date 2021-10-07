@@ -1,24 +1,13 @@
 <template>
-  <v-card
-    elevation="10"
-    outlined
-    hover
-    class="rounded-lg"
-  >
-    <NuxtLink
-      :to="`project/${post.slug}`"
-      class="no-deco"
-    >
+  <v-card elevation="10" outlined hover class="rounded-lg project-card">
+    <NuxtLink :to="`project/${post.slug}`" class="no-deco">
       <v-img
         :src="post.overviewImg"
         class="white--text pt-2 pl-2 img-round-corner"
         gradient="to top, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="200px"
       >
-        <v-card-title
-          class="text-h5"
-          v-text="post.title"
-        />
+        <v-card-title class="text-h5" v-text="post.title" />
         <v-card-subtitle v-text="post.description" />
       </v-img>
 
@@ -44,12 +33,19 @@ export default {
     techDir() {
       return (techName) =>
         techName === 'Vuepress' ? 'Vuepress.png' : `${techName}.svg`
-    },
-  },
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+.project-card {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(0.97);
+  }
+}
+
 .v-card__actions--overflow {
   overflow: auto;
 }
