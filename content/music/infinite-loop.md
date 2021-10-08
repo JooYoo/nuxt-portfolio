@@ -21,9 +21,9 @@ The album includes 10 songs. I consider it as a product. Here is the User Story.
 
 Here are some interesting details about the album.
 
-- All the songs are made by iPad (6th gen).
+- All the beats are made by iPad (6th gen).
 - The title of each song is a programming joke.
-- All the songs are loop. So it won't disturb the listeners to think and work.
+- All the beats are loop. So it won't disturb the listeners to think and work.
 - The album cover is made by CSS. I wanted to use Pixel Art as the cover, but I couldn't find designers who would like to do it together yet.
 - Some Ambient Sounds are hidden in the music. It helps the listener to relax. e.g. fire crackling, record popping, night rain.
 - There is one song that only shows half of the name. Because Spotify and AppleMusic don't support displaying special characters in song titles. But you can see the complete song title on SoundCloud.
