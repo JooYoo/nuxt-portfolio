@@ -19,5 +19,12 @@
     "icon": "fab fa-linkedin",
     "link": "https://www.linkedin.com/in/yu-zhu-511770177",
     "target": "_blank"
+  },
+  {
+    "id": 4,
+    "name": "twitter",
+    "icon": "fab fa-twitter",
+    "link": "https://twitter.com/coderlofi",
+    "target": "_blank"
   }
 ]
