@@ -3,7 +3,7 @@
     <v-row align="center">
       <v-col class="text-left">
         <!-- © {{ new Date().getFullYear() }} -  -->
-        Made with ❤️ &nbsp;&nbsp;by
+        Made with ❤️ &nbsp;by
         <a href="https://nuxtjs.org/" target="_blank" class="no-deco">
           <strong class="nuxt-txt">NuxtJS</strong>
         </a>
