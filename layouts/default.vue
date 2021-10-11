@@ -10,7 +10,7 @@
 export default {
   head: {
     title: 'Yu Portfolio',
-    titleTemplate: '%s | Home',
+    titleTemplate: '%s',
     htmlAttrs: {
       lang: 'en'
     },
