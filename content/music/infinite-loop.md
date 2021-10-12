@@ -1,6 +1,7 @@
 ---
 title: Infinite Loop
 time: 2021
+description: lofi coder lofi music beat album infinite loop
 cover: infinite-loop.png
 slug: infinite-loop
 iframesrc: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1309622320%3Fsecret_token%3Ds-V58j9Nz1tqT&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true

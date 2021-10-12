@@ -2,7 +2,7 @@
 title: Multiple GitHub accounts for one computer
 date: 2020/12/31
 keyword: Git
-description: HTTPS approach
+description: how to set up multiple github accounts for one computer
 type: blog
 slug: multiple-github-accounts-for-one-computer
 ---
