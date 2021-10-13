@@ -29,9 +29,10 @@
 <script>
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['title', 'subtitle', 'skills'],
+  props: ['title', 'subtitle', 'skills', 'defaultBigName'],
+
   data: () => ({
-    isHover: false,
+    isHover: true,
     bigName: ''
   }),
   computed: {
@@ -42,6 +43,9 @@ export default {
     setSize() {
       return (skillName) => (skillName === 'Express' ? 'height:30px' : '')
     }
+  },
+  created() {
+    this.bigName = this.defaultBigName
   },
   methods: {
     hoverName(skillName) {

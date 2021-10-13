@@ -7,11 +7,13 @@
           :title="skills.frontendSkill.title"
           :subtitle="skills.frontendSkill.subtitle"
           :skills="skills.frontendSkill.techlogos"
+          :default-big-name="'Vue'"
         />
         <WidgetsYuSkillCard
           :title="skills.backendSkill.title"
           :subtitle="skills.backendSkill.subtitle"
           :skills="skills.backendSkill.techlogos"
+          :default-big-name="'C#'"
         />
       </v-col>
     </v-row>
@@ -22,7 +24,7 @@
 import skillData from '~/static/skill.json'
 export default {
   data: () => ({
-    skills: skillData,
-  }),
+    skills: skillData
+  })
 }
 </script>
