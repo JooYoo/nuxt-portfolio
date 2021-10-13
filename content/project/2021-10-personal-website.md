@@ -13,8 +13,8 @@ screenshots:
 techs:
   - name: Nuxtjs
   - name: Vuetify
-  - name: Sass
   - name: markdown
+  - name: Sass
   - name: HTML
   - name: JavaScript
 
@@ -114,6 +114,7 @@ VuePress is a Vue powered Static Site Generator. It's usually used for building 
 ## Technologies
 
 - Code: HTML, CSS, JavaScript
+- Data: Markdown
 - Frontend: Vuepress
 - UI Library: Vuetify
 - Deployment: Netlify
@@ -137,6 +138,7 @@ My first Vue project. All the data in the Website is hard coded in the source co
 ## Technologies
 
 - Code: HTML, CSS, JavaScript
+- Data: hard coding
 - Frontend: Vue
 - UI Library: Vuetify
 - Deployment: GitHub Pages

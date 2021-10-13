@@ -13,13 +13,13 @@ screenshots:
   - url: https://farm5.staticflickr.com/4881/40008301783_f2ae188bd9.jpg
   - url: https://farm5.staticflickr.com/4867/46248552374_8a722797a1.jpg
 techs:
-  - name: HTML
-  - name: Sass
-  - name: TypeScript
-  - name: JavaScript
-  - name: Angular
   - name: ionic
+  - name: Angular
+  - name: TypeScript
   - name: Chartjs
+  - name: Sass
+  - name: HTML
+  - name: JavaScript
 ---
 
 <WidgetsMdHeader :title="title" :time="time" :links="links"></WidgetsMdHeader>
