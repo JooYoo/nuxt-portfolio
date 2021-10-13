@@ -15,7 +15,7 @@ export default {
   async asyncData({ $content, params }) {
     const projectPosts = await $content('project', params.slug)
       .only(['title', 'description', 'overviewImg', 'techs', 'slug'])
-      .sortBy('createAt', 'asc')
+      .sortBy('createAt', 'desc')
       .fetch()
 
     return {

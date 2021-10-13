@@ -1,6 +1,6 @@
 ---
 title: Infinity Card
-time: 2018.9 ~ 2019.01
+time: 2018.09 ~ 2019.01
 description: a tool to memorize new vocabulary
 overviewImg: https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80
 links:

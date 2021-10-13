@@ -39,7 +39,7 @@ export default {
   async beforeCreate() {
     const posts = await this.$content('project')
       .only(['title', 'description', 'overviewImg', 'techs', 'slug'])
-      .sortBy('createAt', 'asc')
+      .sortBy('createAt', 'desc')
       .limit(3)
       .fetch()
     this.projectPosts = posts
