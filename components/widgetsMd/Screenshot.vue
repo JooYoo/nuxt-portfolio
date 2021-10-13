@@ -5,14 +5,14 @@
       :key="shot.url"
       :src="shot.url"
       class="md-screenshot__img"
-    >
+    />
   </div>
 </template>
 
 <script>
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['screenshots'],
+  props: ['screenshots']
 }
 </script>
 
@@ -25,7 +25,8 @@ export default {
 
 .md-screenshot__img {
   border-radius: 2vw;
-  border: 0.6vw solid rgba(255, 255, 255, 0.4);
+  border: 0.4vw solid rgba(255, 255, 255, 0.4);
   overflow-x: scroll;
+  object-fit: cover;
 }
 </style>
