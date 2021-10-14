@@ -1,6 +1,7 @@
 <template>
   <v-main>
     <v-container>
+      <h1 class="my-10 text-h3 font-weight-thin">Music</h1>
       <WidgetsMdMusicLink></WidgetsMdMusicLink>
       <v-row class="mb-5">
         <v-col

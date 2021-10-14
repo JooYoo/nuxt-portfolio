@@ -1,14 +1,6 @@
 <template>
-  <v-app-bar
-    fixed
-    elevate-on-scroll
-    app
-    class="px-5"
-  >
-    <NuxtLink
-      class="no-deco"
-      to="/"
-    >
+  <v-app-bar fixed elevate-on-scroll app class="px-5">
+    <NuxtLink class="no-deco" to="/">
       <!-- <v-btn
         text
         class="text-subtitle-1 main-title"
@@ -22,18 +14,20 @@
     </NuxtLink>
     <v-spacer></v-spacer>
 
-    <v-btn
+    <NuxtLink
       v-for="link of links"
       :key="link.to"
-      icon
+      :to="link.to"
+      class="no-deco"
     >
-      <NuxtLink
-        :to="link.to"
-        class="no-deco"
+      <v-btn
+        icon
+        :class="link.to === currentRoute ? `${link.className}--active` : ''"
+        @click="goto(link.to)"
       >
         <v-icon>{{ link.icon }}</v-icon>
-      </NuxtLink>
-    </v-btn>
+      </v-btn>
+    </NuxtLink>
   </v-app-bar>
 </template>
 
@@ -44,21 +38,32 @@ export default {
       {
         to: '/',
         icon: 'mdi-home',
+        className: 'home'
       },
       {
         to: '/project',
         icon: 'mdi-flask-empty-outline',
+        className: 'project'
       },
       {
         to: '/gotcha',
         icon: 'mdi-lightning-bolt',
+        className: 'gotcha'
       },
       {
         to: '/music',
         icon: 'mdi-music-circle-outline',
-      },
+        className: 'music'
+      }
     ],
+    currentRoute: '/'
   }),
+
+  methods: {
+    goto(route) {
+      this.currentRoute = route
+    }
+  }
 }
 </script>
 
@@ -71,5 +76,15 @@ export default {
 
 .main-title {
   text-transform: capitalize;
+}
+
+.home--active,
+.project--active,
+.gotcha--active,
+.music--active {
+  & i {
+    height: 60px !important;
+    border-bottom: 3px solid #888;
+  }
 }
 </style>

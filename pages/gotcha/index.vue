@@ -1,30 +1,30 @@
 <template>
   <v-main>
+    <v-container>
+      <h1 class="my-10 text-h3 font-weight-thin">Gotcha</h1>
 
-    <v-list>
-
-      <v-list-item
-        v-for="post of gotchaPosts"
-        :key="post.title"
-        class="px-10 list-item--hover"
-      >
-        <NuxtLink
-          :to="`gotcha/${post.slug}`"
-          class="no-deco list-item--split"
+      <v-list>
+        <v-list-item
+          v-for="post of gotchaPosts"
+          :key="post.title"
+          class="px-10 list-item--hover"
         >
-          <v-list-item-content>
-            <v-list-item-title v-text="post.title" />
-            <v-list-item-subtitle v-text="post.keyword" />
-          </v-list-item-content>
+          <NuxtLink
+            :to="`gotcha/${post.slug}`"
+            class="no-deco list-item--split"
+          >
+            <v-list-item-content>
+              <v-list-item-title v-text="post.title" />
+              <v-list-item-subtitle v-text="post.keyword" />
+            </v-list-item-content>
 
-          <v-list-item-action>
-            <v-list-item-action-text v-text="post.date" />
-          </v-list-item-action>
-        </NuxtLink>
-      </v-list-item>
-
-    </v-list>
-
+            <v-list-item-action>
+              <v-list-item-action-text v-text="post.date" />
+            </v-list-item-action>
+          </NuxtLink>
+        </v-list-item>
+      </v-list>
+    </v-container>
   </v-main>
 </template>
 
@@ -37,9 +37,9 @@ export default {
       .fetch()
 
     return {
-      gotchaPosts,
+      gotchaPosts
     }
-  },
+  }
 }
 </script>
 

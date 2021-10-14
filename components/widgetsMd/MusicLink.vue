@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-space-around my-15">
+  <div class="d-flex justify-space-between my-15">
     <a
       v-for="link of musicLinks"
       :key="link.name"
