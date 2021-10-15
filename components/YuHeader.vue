@@ -23,7 +23,7 @@
       <v-btn
         icon
         :class="link.to === currentRoute ? `${link.className}--active` : ''"
-        @click="goto(link.to)"
+        @click="getCurrentRoute(link.to)"
       >
         <v-icon>{{ link.icon }}</v-icon>
       </v-btn>
@@ -60,7 +60,7 @@ export default {
   }),
 
   methods: {
-    goto(route) {
+    getCurrentRoute(route) {
       this.currentRoute = route
     }
   }
