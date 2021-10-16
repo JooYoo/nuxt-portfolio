@@ -1,13 +1,11 @@
 ---
 title: Multiple GitHub accounts for one computer
-date: 2020/12/31
+time: 2020.12.31
 keyword: Git
 description: how to set up multiple github accounts for one computer
-type: blog
-slug: multiple-github-accounts-for-one-computer
 ---
 
-<WidgetsMdHeader :title="title" :time="date"></WidgetsMdHeader>
+<WidgetsMdHeader :title="title" :time="time"></WidgetsMdHeader>
 
 ## 🎮 Usage
 
@@ -68,3 +66,5 @@ $ git config --local user.email [YOUR_USER_EMAIL]
 3. After commit and push the change, we can see the current project has its own **Credential Record**. The same approach can be used to config multiple projects. Each project should have its own Credential Record.
    - mac: Keychain Access
    - windows: Credential Manager
+
+<br/>

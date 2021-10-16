@@ -3,6 +3,15 @@
     <v-container>
       <h1 class="my-10 text-h3 font-weight-thin">Gotcha</h1>
 
+      <v-text-field
+        v-model="searchVal"
+        outlined
+        clearable
+        label="Search"
+        prepend-inner-icon="mdi-magnify"
+        color="grey"
+      ></v-text-field>
+
       <v-list>
         <v-list-item
           v-for="post of gotchaPosts"
@@ -19,7 +28,7 @@
             </v-list-item-content>
 
             <v-list-item-action>
-              <v-list-item-action-text v-text="post.date" />
+              <v-list-item-action-text v-text="post.time" />
             </v-list-item-action>
           </NuxtLink>
         </v-list-item>
@@ -32,14 +41,17 @@
 export default {
   async asyncData({ $content, params }) {
     const gotchaPosts = await $content('gotcha', params.slug)
-      .only(['title', 'date', 'keyword', 'slug'])
+      .only(['title', 'time', 'keyword', 'slug'])
       .sortBy('createAt', 'asc')
       .fetch()
 
     return {
       gotchaPosts
     }
-  }
+  },
+  data: () => ({
+    searchVal: ''
+  })
 }
 </script>
 
@@ -54,5 +66,9 @@ export default {
   &:hover {
     background-color: rgba(255, 255, 255, 0.05);
   }
+}
+
+.v-text-field--outlined >>> fieldset {
+  border-color: rgba(192, 0, 250, 0.986);
 }
 </style>

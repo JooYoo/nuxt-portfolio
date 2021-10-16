@@ -1,6 +1,6 @@
 ---
 title: Use SCSS in React project
-date: 2021/01/04
+time: 2021.01.04
 keyword: React
 description: styling React project
 type: blog

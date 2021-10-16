@@ -1,6 +1,6 @@
 ---
 title: Wireless testing WebApp on Mobile devices
-date: 2020/11/29
+time: 2020.11.29
 keyword: debug
 description: a skill mobile web dev must know
 type: blog
