@@ -19,8 +19,6 @@ techs:
 
 <WidgetsMdHeader :title="title" :time="time" :links="links"></WidgetsMdHeader>
 
-<v-container>
-
 <WidgetsMdScreenshot :screenshots="screenshots"></WidgetsMdScreenshot>
 
 <br/>
@@ -31,12 +29,16 @@ A Full-Stack WebApp. It helps users to keep track of important dates and shows h
 
 <br/>
 
+## Supported Platform
+
+- Web
+
+<br/>
+
 ## Link to
 
-TODO:
-
-- 🔗 &nbsp; [Frontend](./2021-10-personal-website)
-- 🔗 &nbsp; [Backend](./BigDayBackend.md)
+- 🔗 &nbsp; [Frontend](./2021-04-big-day-frontend)
+- 🔗 &nbsp; [Backend](./2021-04-big-day-backend)
 
 <br/>
 
@@ -65,3 +67,5 @@ As a user I want to have a tool to keep track of important dates and shows how m
 2. install dependence: `npm i`
 3. create `.env` to define **REACT_APP_API_URL**
 4. start project: `npm run start`
+
+<br/>
