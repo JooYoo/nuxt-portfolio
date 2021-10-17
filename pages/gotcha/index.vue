@@ -14,7 +14,7 @@
 
       <v-list>
         <v-list-item
-          v-for="post of gotchaPosts"
+          v-for="post of filteredPosts"
           :key="post.title"
           class="px-10 list-item--hover"
         >
@@ -51,7 +51,14 @@ export default {
   },
   data: () => ({
     searchVal: ''
-  })
+  }),
+  computed: {
+    filteredPosts() {
+      return this.gotchaPosts.filter((post) =>
+        post.title.toLowerCase().match(this.searchVal.toLowerCase())
+      )
+    }
+  }
 }
 </script>
 
