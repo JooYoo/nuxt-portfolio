@@ -85,6 +85,7 @@ export default {
   & i {
     height: 60px !important;
     border-bottom: 3px solid #888;
+    transition: unset;
   }
 }
 </style>

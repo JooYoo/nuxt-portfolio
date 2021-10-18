@@ -2,25 +2,22 @@
 title: Use SCSS in React project
 time: 2021.01.04
 keyword: React
-description: styling React project
-type: blog
-slug: use-scss-in-react-project
+description: styling React project by SCSS
 ---
 
-<h1 align="center">Use SCSS in React project</h1>
-<div align="center">2021.01.04</div>
-
-::: tip Contents
-[[toc]]
-:::
+<WidgetsMdHeader :title="title" :time="time"></WidgetsMdHeader>
 
 ## 🎮 Usage
 
 React project styling by SCSS.
 
+<br/>
+
 ## 🎯 Goal
 
 Use SCSS instead of the default CSS for React project.
+
+<br/>
 
 ## 🦶🏻 Steps
 
@@ -89,3 +86,5 @@ export default SlideUp;
   }
 >
 ```
+
+<br/>
