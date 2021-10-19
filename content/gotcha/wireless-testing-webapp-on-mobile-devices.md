@@ -1,26 +1,17 @@
 ---
 title: Wireless testing WebApp on Mobile devices
 time: 2020.11.29
-keyword: debug
-description: a skill mobile web dev must know
-type: blog
-slug: wireless-testing-webapp-on-mobile-devices
+keyword: trick
+description: how to test WebApp on mobile devices
 ---
 
-<h1 align="center">Wireless testing WebApp on Mobile devices</h1>
-<div align="center">2020.11.29</div>
-
-::: tip Contents
-[[toc]]
-:::
-
-## 🔗 Related Project
-
-⎋ [DailySpinner](/project/01.DailySpinner.md)
+<WidgetsMdHeader :title="title" :time="time"></WidgetsMdHeader>
 
 ## 🎯 Goal
 
 A WebApp is developed at a local PC. How to debug the WebApp on the phone?
+
+<br/>
 
 ## 🦶🏻 Steps
 
@@ -47,3 +38,5 @@ A WebApp is developed at a local PC. How to debug the WebApp on the phone?
 - Connect the mobile devices to the same network as the dev-pc
 - Input the same ip-address on your moble devices browser last step `http://192.168.x.x:5500/`
 - Because the WebApp is already running via _Live Server_ by PC locally. When another mobile device visit the same address should also see the WebApp.
+
+<br/>
