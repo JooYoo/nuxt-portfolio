@@ -24,6 +24,8 @@
         </a>
       </strong>
     </p>
+
+    <v-divider></v-divider>
   </v-main>
 </template>
 
