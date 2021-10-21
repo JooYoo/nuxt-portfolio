@@ -3,11 +3,12 @@
     "color": "orange",
     "year": "2021",
     "title": "Software Developer",
-    "where": "Liebherr Appliances (DE) • Full-time",
+    "where": "Liebherr (DE) • Full-time",
     "content": [
-      "● Liebherr Appliances eCommerce platform",
+      "🛒 Liebherr Appliances eCommerce platform",
       "● Frontend Development",
-      "● Fullstack Development"
+      "● Backend Development",
+      "◦ Vue, Sass, C#, ASP.NET Core, Entity Framework"
     ]
   },
   {
@@ -16,7 +17,7 @@
     "title": "Frontend Developer",
     "where": "stellar design und engineering GmbH (DE) • Full-time",
     "content": [
-      "● Automotive-Infotainment-System",
+      "🚗 Automotive-Infotainment-System",
       "● Frontend Development",
       "● UI-Components Engineering and Testing",
       "● Collaborate with UI/UX designers",
@@ -29,7 +30,7 @@
     "title": "Software Developer",
     "where": "artiso solutions GmbH (DE) • Apprenticeship",
     "content": [
-      "● Manufacturing Digitization",
+      "⚙️ Manufacturing Digitization",
       "● Software prototyping",
       "● AR/XR research and app development",
       "● Internal software development",
