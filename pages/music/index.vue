@@ -15,7 +15,7 @@
             class="no-deco album-cover-container"
           >
             <v-img
-              :src="require(`~/assets/album/${post.cover}`)"
+              :src="require(`~/assets/img/music/${post.cover}`)"
               aspect-ratio="1"
               class="grey lighten-2 album-cover-img"
             />
@@ -42,9 +42,9 @@ export default {
       .fetch()
 
     return {
-      musicPosts
+      musicPosts,
     }
-  }
+  },
 }
 </script>
 

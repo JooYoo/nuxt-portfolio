@@ -59,7 +59,7 @@ description: Twitter-like-button with particle effect with CSS
 
 Use a design tool like Sketch to draw the heart-clicked process. In my trail I got this image online, it's a `.png` file with a transparent background, and 29 frames in total. We call it _heart-clicked.png_ in this article.
 
-![heart-clicked](/images/gotcha/heart-clicked.png)
+<WidgetsMdImage img-path="gotcha" img-name="heart-clicked.png" ></WidgetsMdImage>
 
 #### Step 1. HTML
 
@@ -178,7 +178,7 @@ I also tried to make the _twitter-like-effect_ to text, instead of the heart.
 
 Use a design tool like Sketch to draw only the particles with 29 frames in total.
 
-![twitter-like-particle](/images/gotcha/twitter-like-particle.png)
+<WidgetsMdImage img-path="gotcha" img-name="twitter-like-particle.png" ></WidgetsMdImage>
 
 #### Step 1. HTML
 
