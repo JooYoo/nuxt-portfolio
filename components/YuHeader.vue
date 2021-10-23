@@ -1,6 +1,14 @@
 <template>
-  <v-app-bar fixed elevate-on-scroll app class="px-5">
-    <NuxtLink class="no-deco" to="/">
+  <v-app-bar
+    fixed
+    elevate-on-scroll
+    app
+    class="px-5"
+  >
+    <NuxtLink
+      class="no-deco"
+      to="/"
+    >
       <!-- <v-btn
         text
         class="text-subtitle-1 main-title"
@@ -22,8 +30,7 @@
     >
       <v-btn
         icon
-        :class="link.to === currentRoute ? `${link.className}--active` : ''"
-        @click="getCurrentRoute(link.to)"
+        :class="link.className === currentRoute ? `${link.className}--active` : ''"
       >
         <v-icon>{{ link.icon }}</v-icon>
       </v-btn>
@@ -38,32 +45,33 @@ export default {
       {
         to: '/',
         icon: 'mdi-home',
-        className: 'home'
+        className: 'index',
       },
       {
         to: '/project',
         icon: 'mdi-flask-empty-outline',
-        className: 'project'
+        className: 'project',
       },
       {
         to: '/gotcha',
         icon: 'mdi-lightning-bolt',
-        className: 'gotcha'
+        className: 'gotcha',
       },
       {
         to: '/music',
         icon: 'mdi-music-circle-outline',
-        className: 'music'
-      }
+        className: 'music',
+      },
     ],
-    currentRoute: '/'
+    currentRoute: 'index',
   }),
 
-  methods: {
-    getCurrentRoute(route) {
-      this.currentRoute = route
-    }
-  }
+  watch: {
+    $route(to, from) {
+      // watching the current route-name, also compute the name to only focus the main route
+      this.currentRoute = this.$route.name.split('-')[0]
+    },
+  },
 }
 </script>
 
@@ -78,12 +86,12 @@ export default {
   text-transform: capitalize;
 }
 
-.home--active,
+.index--active,
 .project--active,
 .gotcha--active,
 .music--active {
-  & i {
-    height: 60px !important;
+  i {
+    height: 55px !important;
     border-bottom: 3px solid #888;
     transition: unset;
   }
