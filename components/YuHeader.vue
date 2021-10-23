@@ -69,6 +69,16 @@ export default {
   watch: {
     $route(to, from) {
       // watching the current route-name, also compute the name to only focus the main route
+      this.getCurrRoute()
+    },
+  },
+
+  created() {
+    this.getCurrRoute()
+  },
+
+  methods: {
+    getCurrRoute() {
       this.currentRoute = this.$route.name.split('-')[0]
     },
   },
