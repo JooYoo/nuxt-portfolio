@@ -13,8 +13,7 @@ description: JavaScript basic hoisting
 
 ### Q1. Explain Js Hoisting by code
 
-<details>
-<summary>🔑</summary>
+<WidgetsMdToggle title="🔑">
 
 ```jsx
 foo()
@@ -25,7 +24,7 @@ function foo() {
 
 - Even if the function is called before it's defined, it still works. That's called Js Hoisting.
 
-</details>
+</WidgetsMdToggle>
 
 <br/>
 
