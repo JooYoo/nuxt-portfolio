@@ -37,13 +37,12 @@ const foo = function () {
 }
 ```
 
-<details>
-<summary>🔑</summary>
+<WidgetsMdToggle title="🔑">
 
 - invalid
 - When the function assigned to a variable, the hoisting will be disabled.
 
-</details>
+</WidgetsMdToggle>
 
 <br/>
 
@@ -56,12 +55,11 @@ const foo = () => {
 }
 ```
 
-<details>
-<summary>🔑</summary>
+<WidgetsMdToggle title="🔑">
 
 - invalid
 - When the function assign to a variable, JS hoisting will be disabled, include arraow function.
 
-</details>
+</WidgetsMdToggle>
 
 <br/>
