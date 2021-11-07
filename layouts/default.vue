@@ -9,10 +9,10 @@
 <script>
 export default {
   head: {
-    title: 'Yu Portfolio',
+    title: 'Yu',
     titleTemplate: '%s',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
@@ -20,17 +20,17 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Zhu Yu Portfolio, Project, Blog and Music'
+        content: 'Zhu Yu Portfolio, Project, Blog and Music',
       },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei'
-      }
-    ]
-  }
+        href: 'https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei',
+      },
+    ],
+  },
 }
 </script>

@@ -7,3 +7,8 @@
   background-color: unset;
   padding-left: unset;
 }
+
+// remove gotcha/search-field border-color
+.v-text-field--outlined fieldset {
+  border-color: unset !important;
+}
