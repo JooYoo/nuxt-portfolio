@@ -2,20 +2,16 @@
   <v-container class="py-15">
     <h3 class="text-h3 font-weight-thin">Education</h3>
 
-    <v-card
-      class="mt-10 px-3 rounded-lg"
-      outlined
-    >
+    <v-card class="mt-10 px-3 rounded-lg" outlined>
       <v-list
         v-for="(education, educationIndex) in educations"
         :key="educationIndex"
       >
-        <v-subheader
-          class="pt-5"
-          inset
-        >
+        <v-subheader class="pt-5" inset>
           <v-list-item-title class="d-flex justify-space-between">
-            <span>{{ education.degree }}&nbsp;|&nbsp;{{ education.timeRoom }}</span>
+            <span
+              >{{ education.degree }}&nbsp;|&nbsp;{{ education.timeRoom }}</span
+            >
             <div>
               <img
                 v-for="(flag, flagIndex) in education.flags"
@@ -28,10 +24,7 @@
           </v-list-item-title>
         </v-subheader>
 
-        <v-list-item
-          class="pb-3"
-          three-line
-        >
+        <v-list-item class="pb-3" three-line>
           <v-list-item-action>
             <span class="text-h5">{{ education.icon }}</span>
           </v-list-item-action>
@@ -40,11 +33,11 @@
             <v-list-item-subtitle
               v-for="(studyAt, studyAtIndex) in education.studyAt"
               :key="studyAtIndex"
-            >{{ studyAt }}</v-list-item-subtitle>
+              >{{ studyAt }}</v-list-item-subtitle
+            >
           </v-list-item-content>
         </v-list-item>
-        <v-divider v-if="educationIndex!==educations.length-1"></v-divider>
-
+        <v-divider v-if="educationIndex !== educations.length - 1"></v-divider>
       </v-list>
     </v-card>
   </v-container>

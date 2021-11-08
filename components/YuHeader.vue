@@ -1,14 +1,6 @@
 <template>
-  <v-app-bar
-    fixed
-    elevate-on-scroll
-    app
-    class="px-5"
-  >
-    <NuxtLink
-      class="no-deco"
-      to="/"
-    >
+  <v-app-bar fixed elevate-on-scroll app class="px-5">
+    <NuxtLink class="no-deco" to="/">
       <!-- <v-btn
         text
         class="text-subtitle-1 main-title"
@@ -30,7 +22,9 @@
     >
       <v-btn
         icon
-        :class="link.className === currentRoute ? `${link.className}--active` : ''"
+        :class="
+          link.className === currentRoute ? `${link.className}--active` : ''
+        "
       >
         <v-icon>{{ link.icon }}</v-icon>
       </v-btn>
@@ -102,7 +96,7 @@ export default {
 .music--active {
   i {
     height: 55px !important;
-    border-bottom: 3px solid #888;
+    box-shadow: 0 2px 0 0 #888;
     transition: unset;
   }
 }
