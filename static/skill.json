@@ -1,29 +1,47 @@
 {
-    "frontendSkill": {
-        "title": "Frontend",
-        "subtitle":
-          "My go-to tool to build WebApp is <strong style=\"color: #41B883\">Vue</strong> and Vue ecosystem. I'm also a big fan of <strong style=\"color: #00D8FF\">React</strong>.",
-        "techlogos": [
-          { "name": "Vue" },
-          { "name": "Nuxtjs" },
-          { "name": "Vuetify" },
-          { "name": "Vuepress" },
-          { "name": "Sass" },
-          { "name": "React" },
-          { "name": "Redux" }
-        ]
-    },
-  
-    "backendSkill": {
-        "title": "Backend",
-        "subtitle":
-          "I'm using <strong style=\"color:#976dce\">.NET Stack</strong> at the work. <strong style=\"color:#539E43\">Nodejs</strong> is my choice when I develop my own project.",
-        "techlogos": [
-          { "name": "csharp" },
-          { "name": "dotNetCore" },
-          { "name": "Nodejs" },
-          { "name": "MongoDB" },
-          { "name": "Express" }
-        ]
-    }
+  "frontendSkill": {
+    "title": "Frontend",
+    "subtitle": "My go-to tool to build WebApp is <strong style=\"color: #41B883\">Vue</strong> and Vue ecosystem. I'm also a big fan of <strong style=\"color: #00D8FF\">React</strong>.",
+    "techlogos": [
+      {
+        "name": "Vue"
+      },
+      {
+        "name": "Nuxtjs"
+      },
+      {
+        "name": "Vuetify"
+      },
+      {
+        "name": "Vuepress"
+      },
+      {
+        "name": "Sass"
+      },
+      {
+        "name": "React"
+      }
+    ]
+  },
+  "backendSkill": {
+    "title": "Backend",
+    "subtitle": "I'm using <strong style=\"color:#976dce\">.NET Stack</strong> at the work. <strong style=\"color:#539E43\">Nodejs</strong> is my choice when I develop my own project.",
+    "techlogos": [
+      {
+        "name": "csharp"
+      },
+      {
+        "name": "dotNetCore"
+      },
+      {
+        "name": "Nodejs"
+      },
+      {
+        "name": "MongoDB"
+      },
+      {
+        "name": "Express"
+      }
+    ]
+  }
 }
