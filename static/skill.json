@@ -34,6 +34,9 @@
         "name": "dotNetCore"
       },
       {
+        "name": "SQL"
+      },
+      {
         "name": "Nodejs"
       },
       {

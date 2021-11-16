@@ -1,10 +1,19 @@
 <template>
-  <v-card class="mx-auto mt-10 py-5 rounded-lg skill-tech-card" outlined>
+  <v-card
+    class="mx-auto mt-10 py-5 rounded-lg skill-tech-card"
+    outlined
+  >
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title class="text-h5 mb-1" v-text="title" />
+        <v-list-item-title
+          class="text-h5 mb-1"
+          v-text="title"
+        />
         <!-- eslint-disable vue/no-v-html -->
-        <v-list-item-subtitle class="mt-2" v-html="subtitle" />
+        <v-list-item-subtitle
+          class="mt-2"
+          v-html="subtitle"
+        />
       </v-list-item-content>
       <!--eslint-enable-->
     </v-list-item>
@@ -21,7 +30,10 @@
         @mouseover=";(isHover = true), hoverName(skill.name)"
         @mouseleave="isHover = false"
       />
-      <div v-show="isHover" class="skill-tech-big-name">{{ bigName }}</div>
+      <div
+        v-show="isHover"
+        class="skill-tech-big-name"
+      >{{ bigName }}</div>
     </v-card-actions>
   </v-card>
 </template>
@@ -33,16 +45,23 @@ export default {
 
   data: () => ({
     isHover: true,
-    bigName: ''
+    bigName: '',
   }),
   computed: {
     setSuffix() {
-      return (skillName) =>
-        skillName === 'Vuepress' ? 'Vuepress.png' : `${skillName}.svg`
+      return (skillName) => {
+        if (skillName === 'Vuepress') {
+          return 'Vuepress.png'
+        } else if (skillName === 'SQL') {
+          return 'SQL.png'
+        } else {
+          return `${skillName}.svg`
+        }
+      }
     },
     setSize() {
       return (skillName) => (skillName === 'Express' ? 'height:30px' : '')
-    }
+    },
   },
   created() {
     this.bigName = this.defaultBigName
@@ -50,8 +69,8 @@ export default {
   methods: {
     hoverName(skillName) {
       this.bigName = skillName
-    }
-  }
+    },
+  },
 }
 </script>
 
