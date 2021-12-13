@@ -35,4 +35,50 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 <br />
 
-to be continue ...
+## Step 1. add script for loading nvm
+
+```bash
+$ cd ~
+```
+
+- ahead to the root directory
+- display hide files by `⌘` + `⇧` + `.`
+
+```bash
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+```
+
+- add this line of code in the end of `.bash_profile`
+
+```bash
+
+$ sudo chown [mac-user-name] ~/.bash_profile
+
+```
+
+- 🐞 if error: `.bash_profile` not allow to edit, type the command above to fix it.
+
+<br />
+
+## Step 1+. Terminal is **zsh**
+
+```bash
+
+$ touch ~/.zshrc
+
+```
+
+- We will need to edit `zshrc`, if there is no such file, then create manully at root
+
+```bash
+
+source ~/.nvm/nvm.sh
+
+```
+
+- add this line of code in `zshrc` to clarify where to find nvm.
+
+<br />
+
+## Step 2 restart Terminal
