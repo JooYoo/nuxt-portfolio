@@ -28,7 +28,6 @@ Using Next.js as a static site generator, how can we get the Frontmatter in Mark
 # 🛸 Techs
 
 - Next.js
-- react
 - JavaScript
 - gray-matter
 - Markdown
