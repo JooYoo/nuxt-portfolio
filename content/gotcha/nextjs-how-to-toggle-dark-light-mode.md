@@ -9,6 +9,10 @@ description: Nextjs how to toggle Dark/Light mode
 
 # 🚀 Demo
 
+<iframe src="https://stackblitz.com/edit/nextjs-pdmbsp?embed=1&file=pages/index.js&hideExplorer=1&theme=dark&view=preview"
+ style="width:100%; height:400px; border: 1px lightgray solid; border-radius: 10px; overflow:hidden; margin-top: 20px;"
+></iframe>
+
 <br/>
 <br/>
 
@@ -30,6 +34,15 @@ Add Dark Mode in Next.js project. Provide a button, users can toggle between Dar
 # 🌲 File Structure
 
 ```javascript
+.
+├── components/
+│   └── ThemeToggle.jsx
+├── pages/
+│   ├── _app.js
+│   └── index.js
+├── packge.json
+├── postcss.config.js
+└── tailwind.config.js
 
 ```
 
@@ -103,6 +116,62 @@ $ npm install @heroicons/react
 
 ## Step 3. create ThemeToggle Component
 
+```jsx
+import { useEffect, useState } from 'react'
+import { useTheme } from 'next-themes'
+import { MoonIcon, SunIcon } from '@heroicons/react/solid'
+
+const ThemeToggle = () => {
+  const { systemTheme, theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  //init
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const renderThemeChnanger = () => {
+    // following logic will only run when component mounted
+    if (!mounted) return null
+
+    // get current system theme
+    const currentTheme = theme === 'system' ? systemTheme : theme
+
+    // toggle light/dark
+    if (currentTheme === 'dark') {
+      return (
+        <MoonIcon
+          className="w-7 h-7"
+          role="button"
+          onClick={() => setTheme('light')}
+        />
+      )
+    } else {
+      return (
+        <SunIcon
+          className="w-7 h-7"
+          role="button"
+          onClick={() => setTheme('dark')}
+        />
+      )
+    }
+  }
+
+  return <div>{renderThemeChnanger()}</div>
+}
+
+export default ThemeToggle
+```
+
+- `components/ThemeToggle.jsx`
+- `useTheme()`: _next-themes_ buildIn hook. We can detecte current-theme.
+- `setMounted`: custom Hook. To protect optimize performance.
+- We check if component is already mounted, if so, we will get the current Theme. Based on _currentTheme_ we can now toggle Dark/Light Mode and also toggle the corresponding icons.
+
 <br/>
 
-to be continue ...
+## Step 4. import and use ThemeToggle Component
+
+- Now we can import and use _ThemeToggleComponent_ at corresponding component. e.g. `index.js`
+
+<br/>
