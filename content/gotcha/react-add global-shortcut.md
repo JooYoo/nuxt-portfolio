@@ -18,6 +18,41 @@ Add Keyboard short globally in React WebApp. Press white-space to trigger a aler
 
 <br />
 
+# 🛸 Techs
+
+- React
+- JavaScript
+
+# 🦶🏻 Steps
+
+## Step 0. the simple solution
+
+```javascript
+import './styles.css'
+import { useEffect } from 'react'
+
+export default function App() {
+  useEffect(() => {
+    window.addEventListener('keyup', onSpace)
+    return () => {
+      window.removeEventListener('keyup', onSpace)
+    }
+  }, [])
+
+  const onSpace = (ev) => {
+    if (ev.key === ' ') {
+      console.log('pressed !!')
+    }
+  }
+
+  return (
+    <div className="App">
+      <div>global shortcut</div>
+    </div>
+  )
+}
+```
+
 <br />
 
 to be continue ...
