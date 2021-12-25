@@ -33,7 +33,7 @@ A scrolling button to take user back to top.
 
 # 🦶🏻 Steps
 
-## Solution 1.
+## Solution 1. with React
 
 ### Step 1. create ScrollTop Component
 
@@ -104,4 +104,58 @@ export default ScrollTop
 
 <br/>
 
-## Solution 2.
+## Solution 2. with CSS
+
+### Step 0. configue scroll-behaviour
+
+```css
+html {
+  scroll-behavior: smooth;
+}
+```
+
+- `styles.css`
+- add `scroll-behavior: smooth` to html-element, so the smooth scroll can cover all elements.
+
+<br/>
+
+### Step 1. create Anchor Point at top
+
+```jsx
+import './styles.css'
+
+export default function App() {
+  return (
+    <div className="App">
+      <div id="scroll-anchor"></div>
+      <div className="content">Lorem ......</div>
+    </div>
+  )
+}
+```
+
+- Add an anchor-point at the TOP of the long content. The element-id should be defined. We will need it in the next step.
+
+<br/>
+
+### Step 2. create scroll-top-top button
+
+```jsx
+import './styles.css'
+
+export default function App() {
+  return (
+    <div className="App">
+      <div id="scroll-anchor"></div>
+      <div className="content">Lorem ......</div>
+      <button>
+        <a href="#scroll-anchor">⇧</a>
+      </button>
+    </div>
+  )
+}
+```
+
+- `<a>`: add a hyperlink-element and set the destination to the anchor-point with `#`
+
+<br/>
