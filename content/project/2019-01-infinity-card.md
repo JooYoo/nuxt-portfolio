@@ -32,7 +32,7 @@ techs:
 
 ## About
 
-A flash-card app helps the user organize and memorize information. So that the user can learn the vocabulary of a new language efficiently.
+A flash-card app helps the user organize and memorize vocabulary. So that the user can learn a new language efficiently.
 
 <br/>
 

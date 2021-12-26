@@ -27,9 +27,9 @@
         :style="setSize(skill.name)"
         height="50px"
         class="mx-5 skill-tech-icon--lift"
-        @mouseover=";(isHover = true), hoverName(skill.name)"
-        @mouseleave="isHover = false"
+        @mouseover="(isHover = true), hoverName(skill.name)"
       />
+      <!-- @mouseleave="isHover = false" -->
       <div
         v-show="isHover"
         class="skill-tech-big-name"

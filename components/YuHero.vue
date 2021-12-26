@@ -1,7 +1,17 @@
 <template>
-  <v-parallax dark height="800" :src="bg">
-    <v-row align="center" justify="center">
-      <v-col class="text-center" cols="12">
+  <v-parallax
+    dark
+    height="600"
+    :src="bg"
+  >
+    <v-row
+      align="center"
+      justify="center"
+    >
+      <v-col
+        class="text-center"
+        cols="12"
+      >
         <h1 class="xiaowei title-name text-h2 font-weight-medium mb-12">
           Z h u Y u
         </h1>
@@ -9,7 +19,7 @@
           between Code and Design
         </h4>
         <hr class="divider my-6" />
-        <h4 class="xiaowei title-job">Frontend Developer</h4>
+        <h4 class="xiaowei title-job">Software Developer</h4>
       </v-col>
     </v-row>
   </v-parallax>

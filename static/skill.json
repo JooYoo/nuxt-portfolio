@@ -19,7 +19,13 @@
         "name": "Sass"
       },
       {
+        "name": "Tailwind"
+      },
+      {
         "name": "React"
+      },
+      {
+        "name": "Webpack"
       }
     ]
   },
@@ -38,12 +44,6 @@
       },
       {
         "name": "Nodejs"
-      },
-      {
-        "name": "MongoDB"
-      },
-      {
-        "name": "Express"
       }
     ]
   }
