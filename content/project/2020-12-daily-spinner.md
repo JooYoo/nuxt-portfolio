@@ -1,7 +1,7 @@
 ---
 title: Daily Spinner
 time: 2020.8 ~ 2020.12
-description: a tool for Scrum Standup Meeting, to pick the team members randomly, help teams to decide who will speak next
+description: a tool for Scrum Standup Meeting, to pick the team members randomly, help the team to decide who will speak next
 overviewImg: https://images.unsplash.com/photo-1509515837298-2c67a3933321?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80
 links:
   - name: 🚀 Demo
