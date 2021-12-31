@@ -34,4 +34,47 @@ Some of the static data is not neccessary to save into Database. We only need a 
 
 # 🦶🏻 Steps
 
+## Step 1. where to put the JSON file
+
+```javascript
+.
+├── components
+├── pages
+├── static/
+│   └── JsonFile.json
+└── package.json
+```
+
+- All of the JSON file save under **static/** folder.
+
+<br/>
+
+## Step 2. create the JSON file
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Zelda",
+    "company": "Nintendo"
+  },
+  {
+    "id": 2,
+    "name": "God of War",
+    "company": "Sony"
+  },
+  {
+    "id": 1,
+    "name": "Halo",
+    "company": "Microsoft"
+  }
+]
+```
+
+- We need double-quotes for each key
+
+<br/>
+
+## Step 3. How to use the JSON file
+
 to be continue ...
