@@ -71,10 +71,27 @@ Some of the static data is not neccessary to save into Database. We only need a 
 ]
 ```
 
+- `static/Game.json`
 - We need double-quotes for each key
 
 <br/>
 
 ## Step 3. How to use the JSON file
 
-to be continue ...
+```js
+<script>
+import GameJson from "~/static/Game.json";
+
+export default {
+  data: () => ({
+    games: GameJson,
+  }),
+};
+</script>
+```
+
+- `components/GameList.vue`
+- `~/`: navigate to the root of the project to import the JSON file
+- after _import_ we can use the data as **data** directly
+
+<br/>
