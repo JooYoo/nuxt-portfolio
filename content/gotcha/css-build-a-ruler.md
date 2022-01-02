@@ -1,8 +1,8 @@
 ---
-title: Build a Ruler with CSS
+title: CSS build a Ruler
 time: 2020.12.17
 keyword: CSS
-description: create a Ruler Hatch Marks by CSS
+description: build a Ruler Hatch Marks by CSS
 ---
 
 <WidgetsMdHeader :title="title" :time="time"></WidgetsMdHeader>

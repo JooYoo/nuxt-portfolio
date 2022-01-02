@@ -1,5 +1,5 @@
 ---
-title: How to center things in CSS
+title: CSS center things
 time: 2020.12.31
 keyword: CSS
 descriptions: three approaches to center an element in css

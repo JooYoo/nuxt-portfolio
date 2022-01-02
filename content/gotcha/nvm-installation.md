@@ -1,5 +1,5 @@
 ---
-title: How to install nvm
+title: nvm installation
 time: 2021.12.12
 keyword: trick
 description: node how to install nvm
