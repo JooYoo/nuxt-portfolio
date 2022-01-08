@@ -1,8 +1,8 @@
 ---
-title: Nuxtjs use json as data
+title: Nuxtjs use JSON as data
 time: 2021.12.29
 keyword: Nuxtjs
-description: Nuxtjs how to use json file as data in project
+description: Nuxtjs how to use JSON file as data in project
 ---
 
 <WidgetsMdHeader :title="title" :time="time"></WidgetsMdHeader>
