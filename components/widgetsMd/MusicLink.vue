@@ -35,25 +35,25 @@ export default {
       {
         name: 'Spotify',
         logo: 'spotify.svg',
-        url: 'https://open.spotify.com/artist/0pzeFK0JIwNYbAXiItjGB3'
+        url: 'https://open.spotify.com/artist/0pzeFK0JIwNYbAXiItjGB3',
       },
       {
         name: 'SoundCloud',
         logo: 'soundcloud.svg',
-        url: 'https://soundcloud.com/joo-yoo-965283946'
+        url: 'https://soundcloud.com/joo-yoo-965283946',
       },
       {
         name: 'AppleMusic',
         logo: 'applemusic.svg',
-        url: 'https://music.apple.com/us/artist/lofi-coder/1584127276'
+        url: 'https://music.apple.com/us/artist/lofi-coder/1584127276',
       },
       {
         name: 'AmazonMusic',
         logo: 'amazonmusic.svg',
-        url: 'https://music.amazon.de/artists/B09F9ZRQY6/lofi-coder'
-      }
-    ]
-  })
+        url: 'https://music.amazon.de/artists/B09F9ZRQY6/lofi-coder',
+      },
+    ],
+  }),
 }
 </script>
 
@@ -78,7 +78,7 @@ export default {
 .music-link {
   transition: all 0.1s ease-in-out;
   &:hover {
-    transform: scale(0.95);
+    transform: scale(1.05);
   }
 }
 </style>

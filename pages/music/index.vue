@@ -50,9 +50,9 @@ export default {
 
 <style lang="scss" scoped>
 .album-cover-container {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   &:hover {
-    transform: scale(0.95);
+    transform: scale(1.02);
   }
 }
 .album-cover-img {
