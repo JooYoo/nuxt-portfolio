@@ -51,8 +51,28 @@ Create simple home-page, about-page and contact-page. Each of the page include r
 
 # 🦶🏻 Steps
 
-## Step 1.
+## Step 1. create pages
+
+- Since Nuxtjs has **File system routing**. We don't need to configure the router manully. All we have to do is create `.vue` files inside of **pages** folder.
+- In this case, except `home-page`, we also have `about-page` and `contact-page`.
 
 <br/>
 
-to be continue ...
+## Step 2. navigate between pages
+
+```vue
+<template>
+  <div>
+    <h3>Home page</h3>
+    <NuxtLink to="/about">About</NuxtLink>
+    <NuxtLink to="/contact">Contact</NuxtLink>
+    <a href="https://nuxtjs.org">External Link</a>
+  </div>
+</template>
+```
+
+- `pages/index.vue`
+- `<NuxtLink to="...">`: Nuxtjs buildIn navigation component. We use `to="..."` to navigate to a specific page.
+- `<a>`: When we need to navigate to external Link.
+
+<br>
