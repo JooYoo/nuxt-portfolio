@@ -15,6 +15,12 @@
           :skills="skills.backendSkill.techlogos"
           :default-big-name="'C#'"
         />
+        <WidgetsYuSkillCard
+          :title="skills.iosSkill.title"
+          :subtitle="skills.iosSkill.subtitle"
+          :skills="skills.iosSkill.techlogos"
+          :default-big-name="'SwiftUI'"
+        />
       </v-col>
     </v-row>
   </v-container>
@@ -24,7 +30,7 @@
 import skillData from '~/static/skill.json'
 export default {
   data: () => ({
-    skills: skillData
-  })
+    skills: skillData,
+  }),
 }
 </script>

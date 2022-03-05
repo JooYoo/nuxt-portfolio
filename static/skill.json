@@ -46,5 +46,20 @@
         "name": "Nodejs"
       }
     ]
+  },
+  "iosSkill": {
+    "title": "iOS",
+    "subtitle": "I really enjoy using <strong style=\"color:#49c4fd\">SwiftUI</strong> to create UI. And picked <strong style=\"color:#f05492\">Realm</strong> to handle Persistent Data.",
+    "techlogos": [
+      {
+        "name": "Swift"
+      },
+      {
+        "name": "SwiftUI"
+      },
+      {
+        "name": "Realm"
+      }
+    ]
   }
 }
