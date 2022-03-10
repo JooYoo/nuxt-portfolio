@@ -49,7 +49,7 @@
   },
   "iosSkill": {
     "title": "iOS",
-    "subtitle": "I really enjoy using <strong style=\"color:#49c4fd\">SwiftUI</strong> to create UI. And picked <strong style=\"color:#f05492\">Realm</strong> to handle Persistent Data for now.",
+    "subtitle": "I really enjoy using <strong style=\"color:#49c4fd\">SwiftUI</strong> to create UI. And picked <strong style=\"color:#f05492\">Realm</strong> to handle the Persistent Data for now.",
     "techlogos": [
       {
         "name": "Swift"
