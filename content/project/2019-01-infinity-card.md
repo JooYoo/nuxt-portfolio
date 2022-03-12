@@ -4,7 +4,9 @@ time: 2018.09 ~ 2019.01
 description: a tool to memorize new vocabulary
 overviewImg: https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80
 links:
-  - name: 🚀 Demo
+  - name: 🍎 AppStore
+    url: https://apps.apple.com/us/app/infinitycards/id1451342091?platform=iphone
+  - name: 🚀 Web
     url: https://jooyoo.github.io/ionic-infinityCard
   - name: 👨🏻‍💻 Github
     url: https://github.com/JooYoo/js-dailySpinner
