@@ -4,6 +4,12 @@
     <v-row>
       <v-col>
         <WidgetsYuSkillCard
+          :title="skills.iosSkill.title"
+          :subtitle="skills.iosSkill.subtitle"
+          :skills="skills.iosSkill.techlogos"
+          :default-big-name="'SwiftUI'"
+        />
+        <WidgetsYuSkillCard
           :title="skills.frontendSkill.title"
           :subtitle="skills.frontendSkill.subtitle"
           :skills="skills.frontendSkill.techlogos"
@@ -14,12 +20,6 @@
           :subtitle="skills.backendSkill.subtitle"
           :skills="skills.backendSkill.techlogos"
           :default-big-name="'C#'"
-        />
-        <WidgetsYuSkillCard
-          :title="skills.iosSkill.title"
-          :subtitle="skills.iosSkill.subtitle"
-          :skills="skills.iosSkill.techlogos"
-          :default-big-name="'SwiftUI'"
         />
       </v-col>
     </v-row>
