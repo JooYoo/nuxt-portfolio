@@ -1,9 +1,20 @@
 [
   {
-    "color": "orange",
+    "color": "amber",
+    "year": "2022",
+    "title": "Mobile Application Developer",
+    "where": "Liebherr Digital Development Center (DE) • Full-time",
+    "content": [
+      "📱 Liebherr B2C / B2B iOS apps",
+      "● iOS app development",
+      "◦ Swift, SwiftUI, UIKit, Firebase, Jenkins, Atlassian"
+    ]
+  },
+  {
+    "color": "light-blue",
     "year": "2021",
     "title": "Software Developer",
-    "where": "Liebherr (DE) • Full-time",
+    "where": "Liebherr Appliances (DE) • Full-time",
     "content": [
       "🛒 Liebherr Appliances eCommerce Website",
       "● Frontend Development",
