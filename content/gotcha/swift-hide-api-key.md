@@ -24,3 +24,12 @@ description: How to hide API KEY in iOS project
 API_KEY = 123abc
 ```
 - add API_KEY to the file
+
+<br/>
+
+### Step 2. attach xcconfig to the project configuration
+
+<WidgetsMdImage img-path="gotcha" img-name="swift-hide-api-key-2.png" ></WidgetsMdImage>
+
+- Project -> Configurations -> Debug / Release Configuration Set
+- They can be set up differently if necessary.
