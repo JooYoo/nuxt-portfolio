@@ -33,3 +33,12 @@ API_KEY = 123abc
 
 - Project -> Configurations -> Debug / Release Configuration Set
 - They can be set up differently if necessary.
+
+<br/>
+
+### Step 3. add a new key-value-pair to `.plist`
+
+<WidgetsMdImage img-path="gotcha" img-name="swift-hide-api-key-2.png" ></WidgetsMdImage>
+
+- `API_KEY`: `$(API_KEY)`
+- For SwiftUI there is no `.plist` file, add the key-value-pair at _Custom iOS Target Properties_ as above
