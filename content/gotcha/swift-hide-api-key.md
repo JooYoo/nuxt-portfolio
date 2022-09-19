@@ -42,3 +42,22 @@ API_KEY = 123abc
 
 - `API_KEY`: `$(API_KEY)`
 - For SwiftUI there is no `.plist` file, add the key-value-pair at _Custom iOS Target Properties_ as above
+
+<br/>
+
+### Step 4. create a function to get API_KEY
+
+```swift
+func getKey() -> String{
+    // get apiKey from Bundle
+    let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
+    
+    // check if key is ok
+    guard let key = apiKey, !key.isEmpty else {
+        print("API key does not exist")
+        return ""
+    }
+    
+    return key
+}
+```
