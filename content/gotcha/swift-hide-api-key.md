@@ -64,4 +64,4 @@ func getKey() -> String{
 
 <br/>
 
-### Step 5.
+### Step 5. add `Secrets.xcconfig` to `.gitignore`
