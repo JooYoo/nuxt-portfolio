@@ -65,3 +65,7 @@ func getKey() -> String{
 <br/>
 
 ### Step 5. add `Secrets.xcconfig` to `.gitignore`
+
+<WidgetsMdImage img-path="gotcha" img-name="swift-hide-api-key-4.png" ></WidgetsMdImage>
+
+After this step, the API_KEY will not be pushed to Git repo anymore.
