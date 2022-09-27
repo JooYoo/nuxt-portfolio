@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "bgImageLink": "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
+        "providerLogo": "udemy",
+        "bgColor": "amber",
+        "title": "Unit Testing Swift Mobile App",
+        "tech": "iOS",
+        "techColor": "cyan",
+        "type": "certificate of completion"
+    },
+    {
+        "id": 1,
+        "bgImageLink": "https://images.unsplash.com/photo-1592609931095-54a2168ae893?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "providerLogo": "udemy",
+        "bgColor": "pink",
+        "title": "RxSwift in iOS",
+        "tech": "iOS",
+        "techColor": "cyan",
+        "type": "certificate of completion"
+    },
+    {
+        "id": 2,
+        "bgImageLink": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80",
+        "providerLogo": "udemy",
+        "bgColor": "light-blue",
+        "title": "ASP.NET CORE Web API",
+        "tech": ".NET",
+        "techColor": "green",
+        "type": "certificate of completion"
+    }
+]
