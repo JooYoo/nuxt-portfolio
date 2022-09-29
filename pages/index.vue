@@ -5,6 +5,7 @@
     <YuProject />
     <YuSkill />
     <YuExperience />
+    <!-- <YuCertificate /> -->
     <YuEducation />
   </v-main>
 </template>
