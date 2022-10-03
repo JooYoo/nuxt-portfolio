@@ -1,32 +1,46 @@
 [
     {
-        "id": 0,
         "bgImageLink": "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
-        "providerLogo": "udemy",
+        "providerName": "udemy",
         "bgColor": "amber",
         "title": "Unit Testing Swift Mobile App",
+        "year": "2022",
         "tech": "iOS",
-        "techColor": "cyan",
-        "type": "certificate of completion"
+        "techColor": "orange",
+        "type": "certificate of completion",
+        "link": "https://www.udemy.com/certificate/UC-c8756162-586e-432c-ac98-02c2ce74e28a/"
     },
     {
-        "id": 1,
         "bgImageLink": "https://images.unsplash.com/photo-1592609931095-54a2168ae893?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "providerLogo": "udemy",
+        "providerName": "udemy",
         "bgColor": "pink",
         "title": "RxSwift in iOS",
+        "year": "2022",
         "tech": "iOS",
-        "techColor": "cyan",
-        "type": "certificate of completion"
+        "techColor": "orange",
+        "type": "certificate of completion",
+        "link": "https://www.udemy.com/certificate/UC-19582be1-53cc-4a92-b4cc-a8202a721fdd/"
     },
     {
-        "id": 2,
         "bgImageLink": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80",
-        "providerLogo": "udemy",
+        "providerName": "udemy",
         "bgColor": "light-blue",
         "title": "ASP.NET CORE Web API",
+        "year": "2022",
         "tech": ".NET",
-        "techColor": "green",
-        "type": "certificate of completion"
+        "techColor": "purple",
+        "type": "certificate of completion",
+        "link": "https://www.udemy.com/certificate/UC-0b499422-33d3-4781-8624-fa2aa3dac0f1/"
+    },
+    {
+        "bgImageLink": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+        "providerName": "meta",
+        "bgColor": "light-blue",
+        "title": "Meta iOS Developer Professional Certificate",
+        "year": "2023",
+        "tech": "iOS",
+        "techColor": "orange",
+        "type": "professional certificate",
+        "link": "https://google.com"
     }
 ]

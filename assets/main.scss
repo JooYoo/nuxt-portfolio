@@ -12,3 +12,9 @@
 .v-text-field--outlined fieldset {
   border-color: unset !important;
 }
+
+// disable Chrome two fingers back/forward swipe
+html,
+body {
+  overscroll-behavior-x: none;
+}
