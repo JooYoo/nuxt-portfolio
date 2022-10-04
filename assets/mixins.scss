@@ -1,0 +1,23 @@
+@mixin fading($side: right) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30px;
+  box-shadow: -5px 0 15px rgba(18, 18, 18, 0.1);
+  background-image: linear-gradient(
+    to right,
+    rgba(18, 18, 18, 0.1),
+    rgba(18, 18, 18, 1)
+  );
+
+  @if $side == left {
+    right: unset;
+    left: 0;
+    background-image: linear-gradient(
+      to left,
+      rgba(18, 18, 18, 0.1),
+      rgba(18, 18, 18, 1)
+    );
+  }
+}

@@ -3,7 +3,7 @@
     <h3 class="text-h3 font-weight-thin mb-10">Certificate</h3>
     <v-row>
       <div class="row-wrapper">
-        <div class="wrapper d-flex pa-3">
+        <div class="cert-cards-wrapper d-flex pa-3">
           <!-- TODO: refactoring YuCertificateCard-->
           <v-card
             v-for="cert in certificates"
@@ -30,12 +30,10 @@
                 height="25px"
               >
             </div>
-
             <v-card-text>
               <div class="mt-10 text-h5 text--primary">{{cert.title}}</div>
               <div class="mt-2 text--disabled">{{cert.year}}</div>
             </v-card-text>
-
             <div class="cert-card__footer">
               <v-card-text class="cert-card__chip">
                 <v-chip
@@ -51,8 +49,8 @@
             </div>
           </v-card>
         </div>
-        <!-- TODO: fading -->
-        <div class="fading"></div>
+        <div class="fading--left"></div>
+        <div class="fading--right"></div>
       </div>
     </v-row>
   </v-container>
@@ -74,12 +72,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// FIXME: renaming
 .row-wrapper {
   position: relative;
   width: 100%;
 
-  .wrapper {
+  .cert-cards-wrapper {
     overflow-x: auto;
 
     .cert-card {
@@ -124,20 +121,11 @@ export default {
     }
   }
 
-  // TODO: add mixins file to holds all the mixins
-  // TODO: add fading mixin, position as parameter for fading-left and right
-  .fading {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 30px;
-    box-shadow: -5px 0 15px rgba(18, 18, 18, 0.1);
-    background-image: linear-gradient(
-      to right,
-      rgba(18, 18, 18, 0.1),
-      rgba(18, 18, 18, 1)
-    );
+  .fading--left {
+    @include fading(left);
+  }
+  .fading--right {
+    @include fading(right);
   }
 }
 </style>
