@@ -31,16 +31,5 @@
         "techColor": "purple",
         "type": "certificate of completion",
         "link": "https://www.udemy.com/certificate/UC-0b499422-33d3-4781-8624-fa2aa3dac0f1/"
-    },
-    {
-        "bgImageLink": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
-        "providerName": "meta",
-        "bgColor": "light-blue",
-        "title": "Meta iOS Developer Professional Certificate",
-        "year": "2023",
-        "tech": "iOS",
-        "techColor": "orange",
-        "type": "professional certificate",
-        "link": "https://google.com"
     }
 ]
