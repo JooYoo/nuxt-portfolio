@@ -12,6 +12,24 @@
         color="grey"
       ></v-text-field>
 
+      <!-- <v-row
+        class="mb-4"
+        align="center"
+        justify="start"
+      >
+        <v-col
+          v-for="keyword in uniqueKeywords"
+          :key="keyword"
+          class="shrink"
+        > -->
+      <!-- TODO: add color to each keyword by using switch -->
+      <!-- TODO: click to display corresponding posts -->
+      <!-- <v-chip class="chip">
+            {{keyword}}
+          </v-chip>
+        </v-col>
+      </v-row> -->
+
       <v-list>
         <v-list-item
           v-for="post of filteredPosts"
@@ -46,19 +64,26 @@ export default {
       .fetch()
 
     return {
-      gotchaPosts
+      gotchaPosts,
     }
   },
   data: () => ({
-    searchVal: ''
+    searchVal: '',
   }),
   computed: {
     filteredPosts() {
       return this.gotchaPosts.filter((post) =>
         post.title.toLowerCase().match(this.searchVal.toLowerCase())
       )
-    }
-  }
+    },
+    uniqueKeywords() {
+      // get a Set collection of all posts keywords
+      const uniqueKeywords = [
+        ...new Set(this.gotchaPosts.map((post) => post.keyword)),
+      ]
+      return uniqueKeywords
+    },
+  },
 }
 </script>
 
@@ -77,5 +102,9 @@ export default {
 
 .v-text-field--outlined >>> fieldset {
   border-color: rgba(192, 0, 250, 0.986);
+}
+
+.chip {
+  cursor: pointer;
 }
 </style>
