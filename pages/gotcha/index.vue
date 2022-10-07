@@ -10,29 +10,39 @@
         label="Search"
         prepend-inner-icon="mdi-magnify"
         color="grey"
+        @input="typeToFilterPosts()"
       ></v-text-field>
 
-      <!-- <v-row
+      <v-row
         class="mb-4"
         align="center"
         justify="start"
       >
+        <!-- TODO: try v-chip-group to group chips-->
+        <v-col class="shrink">
+          <v-chip @click="getAllPosts">
+            ALL
+          </v-chip>
+        </v-col>
         <v-col
           v-for="keyword in uniqueKeywords"
           :key="keyword"
           class="shrink"
-        > -->
-      <!-- TODO: add color to each keyword by using switch -->
-      <!-- TODO: click to display corresponding posts -->
-      <!-- <v-chip class="chip">
+        >
+          <!-- TODO: add color to each keyword by using switch -->
+          <v-chip
+            class="chip"
+            outlined
+            @click="clickToFilterPosts(keyword)"
+          >
             {{keyword}}
           </v-chip>
         </v-col>
-      </v-row> -->
+      </v-row>
 
       <v-list>
         <v-list-item
-          v-for="post of filteredPosts"
+          v-for="post of currentPosts"
           :key="post.title"
           class="px-10 list-item--hover"
         >
@@ -69,19 +79,36 @@ export default {
   },
   data: () => ({
     searchVal: '',
+    currentPosts: [],
   }),
+
   computed: {
-    filteredPosts() {
-      return this.gotchaPosts.filter((post) =>
-        post.title.toLowerCase().match(this.searchVal.toLowerCase())
-      )
-    },
     uniqueKeywords() {
       // get a Set collection of all posts keywords
       const uniqueKeywords = [
         ...new Set(this.gotchaPosts.map((post) => post.keyword)),
       ]
       return uniqueKeywords
+    },
+  },
+  mounted() {
+    this.getAllPosts()
+  },
+  methods: {
+    getAllPosts() {
+      this.currentPosts = this.gotchaPosts
+    },
+    // search-box: type to filter posts
+    typeToFilterPosts() {
+      this.currentPosts = this.gotchaPosts.filter((post) =>
+        post.title.toLowerCase().match(this.searchVal.toLowerCase())
+      )
+    },
+    // search-chips: click to filter posts
+    clickToFilterPosts(keyword) {
+      this.currentPosts = this.gotchaPosts.filter(
+        (post) => post.keyword === keyword
+      )
     },
   },
 }
