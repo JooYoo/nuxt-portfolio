@@ -18,3 +18,11 @@ html,
 body {
   overscroll-behavior-x: none;
 }
+
+// gotcha/chip-search-filter multiple lines
+.chip-group {
+  .v-slide-group__content {
+    flex: unset;
+    flex-flow: wrap;
+  }
+}

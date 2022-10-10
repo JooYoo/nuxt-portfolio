@@ -13,33 +13,21 @@
         @input="typeToFilterPosts()"
       ></v-text-field>
 
-      <v-row
-        class="mb-4"
-        align="center"
-        justify="start"
-      >
-        <!-- TODO: try v-chip-group to group chips-->
-        <v-col class="shrink">
-          <v-chip @click="getAllPosts">
-            ALL
-          </v-chip>
-        </v-col>
-        <v-col
+      <v-chip-group class="mb-4 mt-n3 chip-group">
+        <v-chip @click="getAllPosts">
+          ALL
+        </v-chip>
+        <v-chip
           v-for="keyword in uniqueKeywords"
           :key="keyword"
-          class="shrink"
+          class="chip"
+          outlined
+          :color="getChipColor(keyword)"
+          @click="clickToFilterPosts(keyword)"
         >
-          <!-- TODO: add color to each keyword by using switch -->
-          <v-chip
-            class="chip"
-            outlined
-            @click="clickToFilterPosts(keyword)"
-          >
-            {{keyword}}
-          </v-chip>
-        </v-col>
-      </v-row>
-
+          {{keyword}}
+        </v-chip>
+      </v-chip-group>
       <v-list>
         <v-list-item
           v-for="post of currentPosts"
@@ -66,6 +54,8 @@
 </template>
 
 <script>
+import { getTechColor } from '~/shared/techService'
+
 export default {
   async asyncData({ $content, params }) {
     const gotchaPosts = await $content('gotcha', params.slug)
@@ -89,6 +79,9 @@ export default {
         ...new Set(this.gotchaPosts.map((post) => post.keyword)),
       ]
       return uniqueKeywords
+    },
+    getChipColor() {
+      return (keyword) => getTechColor(keyword)
     },
   },
   mounted() {

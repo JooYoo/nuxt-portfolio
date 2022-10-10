@@ -1,0 +1,34 @@
+[
+    {
+        "name": "CSS",
+        "color": "#1572B6"
+    },
+    {
+        "name": "JavaScript",
+        "color": "#F7DF1E"
+    },
+    {
+        "name": "Git",
+        "color": "#F05032"
+    },
+    {
+        "name": "Nextjs",
+        "color": "#013d82"
+    },
+    {
+        "name": "Nuxtjs",
+        "color": "#00dd82"
+    },
+    {
+        "name": "other",
+        "color": "#bc54d6"
+    },
+    {
+        "name": "React",
+        "color": "#61DAFB"
+    },
+    {
+        "name": "Swift",
+        "color": "#FF462E"
+    }
+]
