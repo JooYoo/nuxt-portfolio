@@ -8,6 +8,7 @@ description: How to hide API KEY in iOS project
 <WidgetsMdHeader :title="title" :time="time"></WidgetsMdHeader>
 
 ## 🎯 Goal
+
 - Hide API KEY. Make it only available in the local project, not push it to Github.
 
 <br/>
@@ -23,6 +24,7 @@ description: How to hide API KEY in iOS project
 ```
 API_KEY = 123abc
 ```
+
 - add API_KEY to the file
 
 <br/>
@@ -38,7 +40,7 @@ API_KEY = 123abc
 
 ### Step 3. add a new key-value-pair to `.plist`
 
-<WidgetsMdImage img-path="gotcha" img-name="swift-hide-api-key-2.png" ></WidgetsMdImage>
+<WidgetsMdImage img-path="gotcha" img-name="swift-hide-api-key-3.png" ></WidgetsMdImage>
 
 - `API_KEY`: `$(API_KEY)`
 - For SwiftUI there is no `.plist` file, add the key-value-pair at _Custom iOS Target Properties_ as above
@@ -51,13 +53,13 @@ API_KEY = 123abc
 func getKey() -> String{
     // get apiKey from Bundle
     let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
-    
+
     // check if key is ok
     guard let key = apiKey, !key.isEmpty else {
         print("API key does not exist")
         return ""
     }
-    
+
     return key
 }
 ```
