@@ -8,7 +8,7 @@
           v-for="post in musicPosts"
           :key="post.title"
           class="d-flex child-flex"
-          cols="4"
+          cols="3"
         >
           <NuxtLink
             :to="`music/${post.slug}`"
@@ -20,7 +20,7 @@
               class="grey lighten-2 album-cover-img"
             />
             <div class="pt-5 album-cover-txt">
-              <div class="text-h6">{{ post.title }}</div>
+              <div class="text-h6 album-title">{{ post.title }}</div>
               <span class="text-h6 text--disabled">Lofi Coder・</span>
               <span class="text-h6 font-weight-regular text--disabled">
                 {{ post.time }}
@@ -56,6 +56,12 @@ export default {
   }
 }
 .album-cover-img {
-  border-radius: 8px;
+  border-radius: 4px;
+}
+
+.album-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 </style>
