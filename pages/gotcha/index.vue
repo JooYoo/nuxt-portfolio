@@ -14,9 +14,13 @@
       ></v-text-field>
 
       <v-chip-group class="mb-4 mt-n3 chip-group">
-        <v-chip @click="getAllPosts">
+        <v-chip
+          label
+          @click="getAllPosts"
+        >
           ALL
         </v-chip>
+        <div class="chip-divider"></div>
         <v-chip
           v-for="keyword in uniqueKeywords"
           :key="keyword"
@@ -126,5 +130,10 @@ export default {
 
 .chip {
   cursor: pointer;
+}
+
+.chip-divider {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  margin-right: 8px;
 }
 </style>
