@@ -18,7 +18,7 @@
       <!--eslint-enable-->
     </v-list-item>
     <v-divider class="mx-4 my-3"></v-divider>
-    <v-card-actions>
+    <v-card-actions class="skill-tech-icon-container">
       <img
         v-for="(skill, i) of skills"
         :key="i"
@@ -77,6 +77,9 @@ export default {
 <style lang="scss" scoped>
 .skill-tech-card {
   overflow: hidden;
+}
+.skill-tech-icon-container {
+  overflow-x: auto;
 }
 .skill-tech-icon--lift {
   transition: all 0.1s ease-in-out;
