@@ -36,12 +36,18 @@
         <v-list-item
           v-for="post of currentPosts"
           :key="post.title"
-          class="px-10 list-item--hover"
+          class="px-8 list-item--hover"
         >
           <NuxtLink
             :to="`gotcha/${post.slug}`"
             class="no-deco list-item--split"
           >
+            <v-list-item-icon class="list-item-icon">
+              <img
+                :src="require(`~/assets/icon/tech/${post.keyword}.svg`)"
+                height="24px"
+              >
+            </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title v-text="post.title" />
               <v-list-item-subtitle v-text="post.keyword" />
@@ -122,6 +128,12 @@ export default {
   &:hover {
     background-color: rgba(255, 255, 255, 0.05);
   }
+}
+
+.list-item-icon {
+  display: flex;
+  justify-content: center;
+  width: 20px;
 }
 
 .v-text-field--outlined >>> fieldset {
