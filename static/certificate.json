@@ -1,5 +1,16 @@
 [
     {
+        "bgImageLink": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+        "providerName": "udemy",
+        "bgColor": "amber",
+        "title": "Combine Framework in iOS",
+        "year": "2022",
+        "tech": "iOS",
+        "techColor": "orange",
+        "type": "certificate of completion",
+        "link": "https://www.udemy.com/certificate/UC-89175f95-5f23-41b8-ac21-fb5158b45526/"
+    },
+    {
         "bgImageLink": "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
         "providerName": "udemy",
         "bgColor": "amber",
