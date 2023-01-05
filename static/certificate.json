@@ -1,5 +1,16 @@
 [
     {
+        "bgImageLink": "https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+        "providerName": "udemy",
+        "bgColor": "amber",
+        "title": "Async/Await Concurrency in Swift",
+        "year": "2022",
+        "tech": "iOS",
+        "techColor": "orange",
+        "type": "certificate of completion",
+        "link": "https://www.udemy.com/certificate/UC-3d007901-8cf7-4ed1-87ca-9eb1e732add1/"
+    },
+    {
         "bgImageLink": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
         "providerName": "udemy",
         "bgColor": "amber",
