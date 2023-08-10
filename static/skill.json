@@ -28,7 +28,7 @@
   },
   "toolingSkill": {
     "title": "Tooling",
-    "subtitle": "Atlassian, <strong style=\"color:#33E6E2\">Netlify</strong>, Github Actions.",
+    "subtitle": "Atlassian, Netlify, <strong style=\"color:#FFCA28\">Firebase</strong>, Github Actions.",
     "techlogos": [
       {
         "name": "Firebase"
