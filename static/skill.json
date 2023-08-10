@@ -31,6 +31,9 @@
     "subtitle": "Atlassian, <strong style=\"color:#33E6E2\">Netlify</strong>, Github Actions.",
     "techlogos": [
       {
+        "name": "Firebase"
+      },
+      {
         "name": "Atlassian"
       },
       {
@@ -61,13 +64,13 @@
         "name": "Flutter"
       },
       {
+        "name": "Dart"
+      },
+      {
         "name": "ionic"
       },
       {
         "name": "PWA"
-      },
-      {
-        "name": "Firebase"
       }
     ]
   }
