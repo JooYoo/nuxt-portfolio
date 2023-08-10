@@ -38,6 +38,9 @@
       },
       {
         "name": "Netlify"
+      },
+      {
+        "name": "Firebase"
       }
     ]
   },
@@ -62,9 +65,6 @@
       },
       {
         "name": "PWA"
-      },
-      {
-        "name": "Firebase"
       },
       {
         "name": "Fastlane"
