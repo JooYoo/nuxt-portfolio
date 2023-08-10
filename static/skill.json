@@ -1,7 +1,7 @@
 {
-  "frontendSkill": {
-    "title": "Frontend",
-    "subtitle": "My go-to tool to build WebApp is <strong style=\"color: #41B883\">Vue</strong> and the tools in Vue ecosystem. I'm also a big fan of <strong style=\"color: #00D8FF\">React</strong>.",
+  "webSkill": {
+    "title": "Web",
+    "subtitle": "Webpack, <strong style=\"color: #41B883\">Vue</strong> ecosystem, Sass, Tailwind.",
     "techlogos": [
       {
         "name": "Vue"
@@ -26,27 +26,24 @@
       }
     ]
   },
-  "backendSkill": {
-    "title": "Backend",
-    "subtitle": "I'm using <strong style=\"color:#976dce\">.NET Stack</strong> at the work. <strong style=\"color:#539E43\">Nodejs</strong> is my choice when I develop my own project.",
+  "toolingSkill": {
+    "title": "Tooling",
+    "subtitle": "Atlassian, <strong style=\"color:#33E6E2\">Netlify</strong>, Github Actions.",
     "techlogos": [
       {
-        "name": "csharp"
+        "name": "Atlassian"
       },
       {
-        "name": "dotNetCore"
+        "name": "GithubActions"
       },
       {
-        "name": "SQL"
-      },
-      {
-        "name": "Nodejs"
+        "name": "Netlify"
       }
     ]
   },
-  "iosSkill": {
-    "title": "iOS",
-    "subtitle": "I really enjoy using <strong style=\"color:#49c4fd\">SwiftUI</strong> to create UI. And picked <strong style=\"color:#f05492\">Realm</strong> to handle the Persistent Data for now.",
+  "mobileSkill": {
+    "title": "Mobile",
+    "subtitle": "iOS native, Cross-platform by <strong style=\"color:#49c4fd\">Flutter</strong>, ionic, PWA.",
     "techlogos": [
       {
         "name": "Swift"
@@ -59,6 +56,24 @@
       },
       {
         "name": "RxSwift"
+      },
+      {
+        "name": "Flutter"
+      },
+      {
+        "name": "Dart"
+      },
+      {
+        "name": "ionic"
+      },
+      {
+        "name": "PWA"
+      },
+      {
+        "name": "Firebase"
+      },
+      {
+        "name": "Fastlane"
       }
     ]
   }
