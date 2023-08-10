@@ -40,5 +40,23 @@
         "name": "Netlify"
       }
     ]
+  },
+  "mobileSkill": {
+    "title": "Mobile",
+    "subtitle": "iOS native, Cross-platform by <strong style=\"color:#49c4fd\">Flutter</strong>, ionic, PWA.",
+    "techlogos": [
+      {
+        "name": "Swift"
+      },
+      {
+        "name": "SwiftUI"
+      },
+      {
+        "name": "Realm"
+      },
+      {
+        "name": "RxSwift"
+      }
+    ]
   }
 }

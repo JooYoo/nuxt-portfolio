@@ -3,12 +3,12 @@
     <h3 class="text-h3 font-weight-thin">Skill</h3>
     <v-row>
       <v-col>
-        <!-- <WidgetsYuSkillCard
+        <WidgetsYuSkillCard
           :title="skills.mobileSkill.title"
           :subtitle="skills.mobileSkill.subtitle"
           :skills="skills.mobileSkill.techlogos"
           :default-big-name="'SwiftUI'"
-        /> -->
+        />
         <WidgetsYuSkillCard
           :title="skills.webSkill.title"
           :subtitle="skills.webSkill.subtitle"
