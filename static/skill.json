@@ -31,15 +31,6 @@
     "subtitle": "Atlassian, <strong style=\"color:#33E6E2\">Netlify</strong>, Github Actions.",
     "techlogos": [
       {
-        "name": "Atlassian"
-      },
-      {
-        "name": "GithubActions"
-      },
-      {
-        "name": "Netlify"
-      },
-      {
         "name": "Firebase"
       }
     ]
