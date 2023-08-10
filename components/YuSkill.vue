@@ -4,22 +4,22 @@
     <v-row>
       <v-col>
         <WidgetsYuSkillCard
-          :title="skills.iosSkill.title"
-          :subtitle="skills.iosSkill.subtitle"
-          :skills="skills.iosSkill.techlogos"
+          :title="skills.mobileSkill.title"
+          :subtitle="skills.mobileSkill.subtitle"
+          :skills="skills.mobileSkill.techlogos"
           :default-big-name="'SwiftUI'"
         />
         <WidgetsYuSkillCard
-          :title="skills.frontendSkill.title"
-          :subtitle="skills.frontendSkill.subtitle"
-          :skills="skills.frontendSkill.techlogos"
+          :title="skills.webSkill.title"
+          :subtitle="skills.webSkill.subtitle"
+          :skills="skills.webSkill.techlogos"
           :default-big-name="'Vue'"
         />
         <WidgetsYuSkillCard
-          :title="skills.backendSkill.title"
-          :subtitle="skills.backendSkill.subtitle"
-          :skills="skills.backendSkill.techlogos"
-          :default-big-name="'C#'"
+          :title="skills.toolingSkill.title"
+          :subtitle="skills.toolingSkill.subtitle"
+          :skills="skills.toolingSkill.techlogos"
+          :default-big-name="'GithubActions'"
         />
       </v-col>
     </v-row>
