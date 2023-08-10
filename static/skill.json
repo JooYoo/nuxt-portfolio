@@ -56,6 +56,21 @@
       },
       {
         "name": "RxSwift"
+      },
+      {
+        "name": "Flutter"
+      },
+      {
+        "name": "Dart"
+      },
+      {
+        "name": "ionic"
+      },
+      {
+        "name": "PWA"
+      },
+      {
+        "name": "Firebase"
       }
     ]
   }
