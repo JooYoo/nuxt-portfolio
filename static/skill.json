@@ -76,7 +76,7 @@
         "name": "PWA"
       },
       {
-        "name": "Fastlane"
+        "name": "fastlane"
       }
     ]
   }
