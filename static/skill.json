@@ -22,6 +22,9 @@
         "name": "Tailwind"
       },
       {
+        "name": "Vite"
+      },
+      {
         "name": "Webpack"
       }
     ]
@@ -71,6 +74,9 @@
       },
       {
         "name": "PWA"
+      },
+      {
+        "name": "Fastlane"
       }
     ]
   }

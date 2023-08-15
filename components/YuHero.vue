@@ -16,10 +16,10 @@
           Z h u Y u
         </h1>
         <h4 class="xiaowei title-slogan text-h6 font-weight-thin">
-          between Code and Design
+          Native, Web and Cross-platform
         </h4>
         <hr class="divider my-6" />
-        <h4 class="xiaowei title-job">Software Developer</h4>
+        <h4 class="xiaowei title-job">Software Engineer</h4>
       </v-col>
     </v-row>
   </v-parallax>
