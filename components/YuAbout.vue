@@ -19,8 +19,8 @@ export default {
   name: 'YuAbout',
 
   data: () => ({
-    abouts: JsonAbouts
-  })
+    abouts: JsonAbouts,
+  }),
 }
 </script>
 
@@ -28,25 +28,42 @@ export default {
 .external-link {
   font-weight: bold;
   text-decoration: none;
+
+  &--liebherr {
+    border-bottom: 1px dotted #ffd000;
+    color: #ffd000 !important;
+  }
+
+  &--spotify {
+    border-bottom: 1px dotted #1db954;
+    color: #1db954 !important;
+  }
+
+  &--apple {
+    border-bottom: 1px dotted #c2cad7;
+    color: #c2cad7 !important;
+  }
+
+  &--soundcloud {
+    border-bottom: 1px dotted #fe5000;
+    color: #fe5000 !important;
+  }
 }
 
-.external-link--liebherr {
-  border-bottom: 1px dotted #c2cad7;
-  color: #c2cad7 !important;
-}
+.emphasize-text {
+  font-weight: bold;
+  text-decoration: none;
 
-.external-link--spotify {
-  border-bottom: 1px dotted #1db954;
-  color: #1db954 !important;
-}
+  &--vue {
+    color: #40b883 !important;
+  }
 
-.external-link--apple {
-  border-bottom: 1px dotted #c2cad7;
-  color: #c2cad7 !important;
-}
+  &--flutter {
+    color: #5cc6f8 !important;
+  }
 
-.external-link--soundcloud {
-  border-bottom: 1px dotted #fe5000;
-  color: #fe5000 !important;
+  &--ios {
+    color: #c2cad7 !important;
+  }
 }
 </style>
