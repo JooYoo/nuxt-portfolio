@@ -16,7 +16,7 @@
           Z h u Y u
         </h1>
         <h4 class="xiaowei title-slogan text-h6 font-weight-thin">
-          Web, Native and Cross-platform
+          Mobile Development
         </h4>
         <hr class="divider my-6" />
         <h4 class="xiaowei title-job">Software Engineer</h4>
